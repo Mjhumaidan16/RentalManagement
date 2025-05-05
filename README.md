@@ -1,2 +1,2 @@
-# adv_pro
-advance programing project 
+# Equipment Rental Management System
+a repo for Advanced Programming project 
