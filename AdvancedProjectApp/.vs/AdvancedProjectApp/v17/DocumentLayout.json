@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|c:\\users\\mjhum\\onedrive - bahrain polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\rentalmanagement\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\rental requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:rental requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|c:\\users\\mjhum\\onedrive - bahrain polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\rentalmanagement\\advancedprojectapp\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|c:\\users\\mjhum\\onedrive - bahrain polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\rentalmanagement\\advancedprojectapp\\addemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:addemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\verifiyadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:verifiyadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\fradduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:fradduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|c:\\users\\mjhum\\onedrive - bahrain polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\rentalmanagement\\advancedprojectapp\\addemployee.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:addemployee.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|c:\\users\\mjhum\\onedrive - bahrain polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\rentalmanagement\\advancedprojectapp\\rental requests.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:rental requests.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|c:\\users\\mjhum\\onedrive - bahrain polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\rentalmanagement\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0C99C8-052D-4EDA-A5C7-501862FB74D3}|AdvancedProjectApp.csproj|solutionrelative:rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rental Transactions.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeDocumentMoniker": "Rental Transactions.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
+              "RelativeToolTip": "Rental Transactions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T09:24:19.531Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.cs",
+              "RelativeDocumentMoniker": "AddEmployee.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.cs",
+              "RelativeToolTip": "AddEmployee.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowEwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:09:48.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddEmployee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.cs",
+              "RelativeDocumentMoniker": "AddEmployee.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\AdvancedProjectClasses\\AdvancedProjectApp\\AddEmployee.cs [Design]",
+              "RelativeToolTip": "..\\..\\AdvancedProjectClasses\\AdvancedProjectApp\\AddEmployee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:02:18.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEmployee.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.Designer.cs",
+              "RelativeDocumentMoniker": "AddEmployee.Designer.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.Designer.cs",
+              "RelativeToolTip": "AddEmployee.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:02:18.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FraddUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\FraddUser.cs",
+              "RelativeDocumentMoniker": "FraddUser.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\AdvancedProjectClasses\\AdvancedProjectApp\\FraddUser.cs [Design]",
+              "RelativeToolTip": "..\\..\\AdvancedProjectClasses\\AdvancedProjectApp\\FraddUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T07:28:50.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rental Requests.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Requests.cs",
+              "RelativeDocumentMoniker": "Rental Requests.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\AdvancedProjectClasses\\AdvancedProjectApp\\Rental Requests.cs [Design]",
+              "RelativeToolTip": "..\\..\\AdvancedProjectClasses\\AdvancedProjectApp\\Rental Requests.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:32:51.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\AdvancedProjectClasses\\AdvancedProjectApp\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\AdvancedProjectClasses\\AdvancedProjectApp\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T07:28:45.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "verifiyadm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\verifiyadm.cs",
+              "RelativeDocumentMoniker": "verifiyadm.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\AdvancedProjectClasses\\AdvancedProjectApp\\verifiyadm.cs [Design]",
+              "RelativeToolTip": "..\\..\\AdvancedProjectClasses\\AdvancedProjectApp\\verifiyadm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T07:28:54.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddEmployee.resx",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.resx",
+              "RelativeDocumentMoniker": "AddEmployee.resx",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\AddEmployee.resx",
+              "RelativeToolTip": "AddEmployee.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-15T08:02:18.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rental Requests.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Requests.Designer.cs",
+              "RelativeDocumentMoniker": "Rental Requests.Designer.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Requests.Designer.cs",
+              "RelativeToolTip": "Rental Requests.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:03:22.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Rental Transactions.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeDocumentMoniker": "Rental Transactions.cs",
+              "ToolTip": "C:\\Users\\mjhum\\OneDrive - Bahrain Polytechnic\\mohammed\\university\\year 3\\2\\adv_pro\\RentalManagement\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeToolTip": "Rental Transactions.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAvwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:21:31.631Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
