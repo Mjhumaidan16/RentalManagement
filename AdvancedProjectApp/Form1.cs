@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AdvancedProjectApp;
 using AdvancedProjectObjects;
 
 namespace WindowsFormsApp3
@@ -29,33 +30,41 @@ namespace WindowsFormsApp3
         private void Button1_Click(object sender, EventArgs e)
         {
             string enteredEmail = Email.Text.Trim();
-            string enteredPassword = Password.Text.Trim(); // ideally use hash
+            string enteredPassword = Password.Text.Trim(); // Ideally hash it for real security
 
             var user = equipmentDBContext.Users
                           .FirstOrDefault(u => u.Email == enteredEmail && u.PasswordHash == enteredPassword);
 
             if (user != null)
             {
-                MessageBox.Show($"Welcome {user.Name}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // TODO: redirect to another form
+                // Check user role
+                if (user.Role == "Admin" || user.Role == "Manager")
+                {
+                    MessageBox.Show($"Welcome {user.Name}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Hide the login form
+                    this.Hide();
+
+                    // Open the Dashboard form
+                    DashboardForm dashboardForm = new DashboardForm(); // optionally pass user
+                    dashboardForm.FormClosed += (s, args) => this.Close();
+                    dashboardForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Access denied. Only Admins and Managers can log in.", "Access Restricted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
                 MessageBox.Show("Invalid Email or Password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (Email.Text == "Enter Email")
-            {
-                Panel5.Visible = true;
-            }
-
-            if (Password.Text == "Enter Password")
-            {
-                panel6.Visible = true;
-            }
-
+            // Optional visual indicators for empty fields
+            Panel5.Visible = string.IsNullOrWhiteSpace(Email.Text) || Email.Text == "Enter Email";
+            panel7.Visible = string.IsNullOrWhiteSpace(Password.Text) || Password.Text == "Enter Password";
         }
-        
+
 
         private void ProgressBar1_Click(object sender, EventArgs e)
         {
@@ -112,8 +121,12 @@ namespace WindowsFormsApp3
 
         private void CreateNewAcount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            FraddUsers addUserForm = new FraddUsers(); // Use the actual form
+            this.Hide(); // hide the login form
+            addUserForm.FormClosed += (s, args) => this.Close(); // close login when addUser closes
+            addUserForm.Show();
         }
+
 
         private void ForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

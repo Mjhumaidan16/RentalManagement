@@ -44,13 +44,6 @@
             panel2 = new Panel();
             panel3 = new Panel();
             verifiy_btn = new Button();
-            panel10 = new Panel();
-            panel11 = new Panel();
-            label3 = new Label();
-            panel12 = new Panel();
-            panel13 = new Panel();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
             panel14 = new Panel();
             panel15 = new Panel();
             label4 = new Label();
@@ -66,10 +59,6 @@
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
-            panel10.SuspendLayout();
-            panel11.SuspendLayout();
-            panel12.SuspendLayout();
-            panel13.SuspendLayout();
             panel14.SuspendLayout();
             panel15.SuspendLayout();
             panel16.SuspendLayout();
@@ -122,6 +111,8 @@
             adm.Size = new Size(484, 19);
             adm.TabIndex = 11;
             adm.Text = "Enter Admin Email";
+            adm.Click += TextBox1_Click;
+            adm.TextChanged += adm_TextChanged;
             // 
             // textBox2
             // 
@@ -244,88 +235,6 @@
             verifiy_btn.UseVisualStyleBackColor = true;
             verifiy_btn.Click += login_btn_Click;
             // 
-            // panel10
-            // 
-            panel10.Controls.Add(panel11);
-            panel10.Controls.Add(panel12);
-            panel10.Location = new Point(597, 487);
-            panel10.Margin = new Padding(4, 3, 4, 3);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(520, 112);
-            panel10.TabIndex = 28;
-            // 
-            // panel11
-            // 
-            panel11.Controls.Add(label3);
-            panel11.Location = new Point(12, 63);
-            panel11.Margin = new Padding(4, 3, 4, 3);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(505, 45);
-            panel11.TabIndex = 13;
-            panel11.Visible = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Dock = DockStyle.Left;
-            label3.Font = new Font("Microsoft Sans Serif", 10.25F);
-            label3.ForeColor = Color.Red;
-            label3.Location = new Point(0, 0);
-            label3.Margin = new Padding(5, 0, 5, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(122, 17);
-            label3.TabIndex = 14;
-            label3.Text = "* Invalid Password";
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.Transparent;
-            panel12.Controls.Add(panel13);
-            panel12.Controls.Add(textBox6);
-            panel12.Dock = DockStyle.Top;
-            panel12.ForeColor = SystemColors.ActiveCaptionText;
-            panel12.Location = new Point(0, 0);
-            panel12.Margin = new Padding(5);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(520, 58);
-            panel12.TabIndex = 12;
-            // 
-            // panel13
-            // 
-            panel13.Anchor = AnchorStyles.None;
-            panel13.BackColor = Color.Black;
-            panel13.Controls.Add(textBox5);
-            panel13.ForeColor = SystemColors.ActiveCaptionText;
-            panel13.Location = new Point(9, 46);
-            panel13.Margin = new Padding(5);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(484, 2);
-            panel13.TabIndex = 13;
-            // 
-            // textBox5
-            // 
-            textBox5.Font = new Font("Microsoft Sans Serif", 10.25F);
-            textBox5.Location = new Point(233, 23);
-            textBox5.Margin = new Padding(5);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(483, 23);
-            textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            textBox6.Anchor = AnchorStyles.None;
-            textBox6.BackColor = SystemColors.ButtonFace;
-            textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Microsoft Sans Serif", 12.25F);
-            textBox6.ForeColor = Color.Gray;
-            textBox6.Location = new Point(10, 20);
-            textBox6.Margin = new Padding(5);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(484, 19);
-            textBox6.TabIndex = 11;
-            textBox6.Text = "Conform Password";
-            textBox6.TextChanged += textBox6_TextChanged;
-            // 
             // panel14
             // 
             panel14.Controls.Add(panel15);
@@ -406,6 +315,7 @@
             adm_pass.Size = new Size(484, 19);
             adm_pass.TabIndex = 11;
             adm_pass.Text = "Enter Password";
+            adm_pass.Click += TextBox4_Click;
             adm_pass.TextChanged += adm_pass_TextChanged;
             // 
             // panel1
@@ -422,7 +332,6 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1359, 752);
-            Controls.Add(panel10);
             Controls.Add(pictureBox2);
             Controls.Add(panel14);
             Controls.Add(password);
@@ -439,6 +348,7 @@
             Text = "DashboardForm";
             WindowState = FormWindowState.Maximized;
             Load += verifiyadm_Load;
+            Click += adm_TextChanged;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
@@ -449,13 +359,6 @@
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
             panel14.ResumeLayout(false);
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
@@ -486,13 +389,6 @@
         private System.Windows.Forms.Label Signup;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button verifiy_btn;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label4;

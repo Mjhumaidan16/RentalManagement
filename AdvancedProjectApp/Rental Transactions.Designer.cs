@@ -1,6 +1,6 @@
 ﻿namespace AdvancedProjectApp
 {
-    partial class DashBoard
+    partial class Rental_Transactions
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rental_Transactions));
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -45,34 +45,37 @@
             button2 = new Button();
             button1 = new Button();
             panel4 = new Panel();
-            addEmployee_status = new ComboBox();
+            txtDeposit = new TextBox();
+            label11 = new Label();
+            txtRentalFee = new TextBox();
+            label5 = new Label();
+            txtActualReturnDate = new TextBox();
+            txtEquipmentId = new TextBox();
+            label1 = new Label();
+            txtCustomerId = new TextBox();
+            txtPaymentstatus = new ComboBox();
             label7 = new Label();
-            addEmployee_clearBtn = new Button();
-            addEmployee_deleteBtn = new Button();
-            addEmployee_updateBtn = new Button();
-            addEmployee_addBtn = new Button();
-            addEmployee_importBtn = new Button();
-            addEmployee_picture = new PictureBox();
-            addEmployee_position = new ComboBox();
+            clearBtn = new Button();
+            updateBtn = new Button();
+            addBtn = new Button();
             label6 = new Label();
-            addEmployee_phoneNum = new TextBox();
+            txtActualStartDate = new TextBox();
             label2 = new Label();
-            addEmployee_gender = new ComboBox();
             label4 = new Label();
-            addEmployee_fullName = new TextBox();
+            txtRequestId = new TextBox();
             label3 = new Label();
-            addEmployee_id = new TextBox();
+            txtTransactionId = new TextBox();
             label8 = new Label();
             panel5 = new Panel();
             panel6 = new Panel();
             groupBox1 = new GroupBox();
-            button6 = new Button();
-            button7 = new Button();
-            comboBox1 = new ComboBox();
+            btnReset = new Button();
+            btnFilter = new Button();
             label9 = new Label();
-            dataGridView1 = new DataGridView();
+            dataGridView = new DataGridView();
             label10 = new Label();
             panel7 = new Panel();
+            txtFilterValue = new TextBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -82,10 +85,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)addEmployee_picture).BeginInit();
             panel6.SuspendLayout();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -191,6 +193,7 @@
             button5.TabIndex = 30;
             button5.Text = "Logs";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox1
             // 
@@ -215,6 +218,7 @@
             button4.TabIndex = 29;
             button4.Text = "Equipment Information";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -229,6 +233,7 @@
             button3.TabIndex = 28;
             button3.Text = " Return Records";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -241,8 +246,9 @@
             button2.Name = "button2";
             button2.Size = new Size(169, 52);
             button2.TabIndex = 27;
-            button2.Text = "Rental Transactions";
+            button2.Text = "Rental Requset";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -255,30 +261,35 @@
             button1.Name = "button1";
             button1.Size = new Size(169, 52);
             button1.TabIndex = 26;
-            button1.Text = "Rental Requests";
+            button1.Text = "DashBoard";
+            button1.UseMnemonic = false;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel4
             // 
             panel4.BackColor = SystemColors.ButtonHighlight;
             panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(addEmployee_status);
+            panel4.Controls.Add(txtDeposit);
+            panel4.Controls.Add(label11);
+            panel4.Controls.Add(txtRentalFee);
+            panel4.Controls.Add(label5);
+            panel4.Controls.Add(txtActualReturnDate);
+            panel4.Controls.Add(txtEquipmentId);
+            panel4.Controls.Add(label1);
+            panel4.Controls.Add(txtCustomerId);
+            panel4.Controls.Add(txtPaymentstatus);
             panel4.Controls.Add(label7);
-            panel4.Controls.Add(addEmployee_clearBtn);
-            panel4.Controls.Add(addEmployee_deleteBtn);
-            panel4.Controls.Add(addEmployee_updateBtn);
-            panel4.Controls.Add(addEmployee_addBtn);
-            panel4.Controls.Add(addEmployee_importBtn);
-            panel4.Controls.Add(addEmployee_picture);
-            panel4.Controls.Add(addEmployee_position);
+            panel4.Controls.Add(clearBtn);
+            panel4.Controls.Add(updateBtn);
+            panel4.Controls.Add(addBtn);
             panel4.Controls.Add(label6);
-            panel4.Controls.Add(addEmployee_phoneNum);
+            panel4.Controls.Add(txtActualStartDate);
             panel4.Controls.Add(label2);
-            panel4.Controls.Add(addEmployee_gender);
             panel4.Controls.Add(label4);
-            panel4.Controls.Add(addEmployee_fullName);
+            panel4.Controls.Add(txtRequestId);
             panel4.Controls.Add(label3);
-            panel4.Controls.Add(addEmployee_id);
+            panel4.Controls.Add(txtTransactionId);
             panel4.Controls.Add(label8);
             panel4.Controls.Add(panel5);
             panel4.Location = new Point(325, 426);
@@ -287,164 +298,185 @@
             panel4.Size = new Size(978, 248);
             panel4.TabIndex = 27;
             // 
-            // addEmployee_status
+            // txtDeposit
             // 
-            addEmployee_status.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_status.FormattingEnabled = true;
-            addEmployee_status.Items.AddRange(new object[] { "Active", "Ianctive" });
-            addEmployee_status.Location = new Point(492, 125);
-            addEmployee_status.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_status.Name = "addEmployee_status";
-            addEmployee_status.Size = new Size(198, 23);
-            addEmployee_status.TabIndex = 19;
+            txtDeposit.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDeposit.Location = new Point(802, 93);
+            txtDeposit.Margin = new Padding(4, 3, 4, 3);
+            txtDeposit.Name = "txtDeposit";
+            txtDeposit.Size = new Size(131, 21);
+            txtDeposit.TabIndex = 27;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Location = new Point(724, 96);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(52, 15);
+            label11.TabIndex = 26;
+            label11.Text = "Deposit:";
+            // 
+            // txtRentalFee
+            // 
+            txtRentalFee.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRentalFee.Location = new Point(802, 39);
+            txtRentalFee.Margin = new Padding(4, 3, 4, 3);
+            txtRentalFee.Name = "txtRentalFee";
+            txtRentalFee.Size = new Size(131, 21);
+            txtRentalFee.TabIndex = 25;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(724, 42);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(70, 15);
+            label5.TabIndex = 24;
+            label5.Text = "Rental Fee:";
+            // 
+            // txtActualReturnDate
+            // 
+            txtActualReturnDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtActualReturnDate.Location = new Point(492, 80);
+            txtActualReturnDate.Margin = new Padding(4, 3, 4, 3);
+            txtActualReturnDate.Name = "txtActualReturnDate";
+            txtActualReturnDate.Size = new Size(177, 21);
+            txtActualReturnDate.TabIndex = 23;
+            // 
+            // txtEquipmentId
+            // 
+            txtEquipmentId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEquipmentId.Location = new Point(146, 152);
+            txtEquipmentId.Margin = new Padding(4, 3, 4, 3);
+            txtEquipmentId.Name = "txtEquipmentId";
+            txtEquipmentId.Size = new Size(156, 21);
+            txtEquipmentId.TabIndex = 22;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(52, 152);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 15);
+            label1.TabIndex = 21;
+            label1.Text = "Equipment ID:";
+            // 
+            // txtCustomerId
+            // 
+            txtCustomerId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCustomerId.Location = new Point(146, 109);
+            txtCustomerId.Margin = new Padding(4, 3, 4, 3);
+            txtCustomerId.Name = "txtCustomerId";
+            txtCustomerId.Size = new Size(156, 21);
+            txtCustomerId.TabIndex = 20;
+            // 
+            // txtPaymentstatus
+            // 
+            txtPaymentstatus.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPaymentstatus.FormattingEnabled = true;
+            txtPaymentstatus.Items.AddRange(new object[] { "Paid", "Pending", "Overdue" });
+            txtPaymentstatus.Location = new Point(492, 125);
+            txtPaymentstatus.Margin = new Padding(4, 3, 4, 3);
+            txtPaymentstatus.Name = "txtPaymentstatus";
+            txtPaymentstatus.Size = new Size(177, 23);
+            txtPaymentstatus.TabIndex = 19;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(436, 125);
+            label7.Location = new Point(376, 128);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(44, 15);
+            label7.Size = new Size(95, 15);
             label7.TabIndex = 18;
-            label7.Text = "Status:";
+            label7.Text = "Payment Status:";
             // 
-            // addEmployee_clearBtn
+            // clearBtn
             // 
-            addEmployee_clearBtn.BackColor = Color.FromArgb(33, 11, 97);
-            addEmployee_clearBtn.Cursor = Cursors.Hand;
-            addEmployee_clearBtn.FlatAppearance.BorderSize = 0;
-            addEmployee_clearBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_clearBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_clearBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_clearBtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_clearBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_clearBtn.ForeColor = Color.White;
-            addEmployee_clearBtn.Location = new Point(690, 188);
-            addEmployee_clearBtn.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_clearBtn.Name = "addEmployee_clearBtn";
-            addEmployee_clearBtn.Size = new Size(132, 43);
-            addEmployee_clearBtn.TabIndex = 17;
-            addEmployee_clearBtn.Text = "Clear";
-            addEmployee_clearBtn.UseVisualStyleBackColor = false;
+            clearBtn.BackColor = Color.FromArgb(33, 11, 97);
+            clearBtn.Cursor = Cursors.Hand;
+            clearBtn.FlatAppearance.BorderSize = 0;
+            clearBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
+            clearBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
+            clearBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
+            clearBtn.FlatStyle = FlatStyle.Flat;
+            clearBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            clearBtn.ForeColor = Color.White;
+            clearBtn.Location = new Point(579, 187);
+            clearBtn.Margin = new Padding(4, 3, 4, 3);
+            clearBtn.Name = "clearBtn";
+            clearBtn.Size = new Size(132, 43);
+            clearBtn.TabIndex = 17;
+            clearBtn.Text = "Clear";
+            clearBtn.UseVisualStyleBackColor = false;
+            clearBtn.Click += clearBtn_Click;
             // 
-            // addEmployee_deleteBtn
+            // updateBtn
             // 
-            addEmployee_deleteBtn.BackColor = Color.FromArgb(33, 11, 97);
-            addEmployee_deleteBtn.Cursor = Cursors.Hand;
-            addEmployee_deleteBtn.FlatAppearance.BorderSize = 0;
-            addEmployee_deleteBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_deleteBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_deleteBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_deleteBtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_deleteBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_deleteBtn.ForeColor = Color.White;
-            addEmployee_deleteBtn.Location = new Point(538, 188);
-            addEmployee_deleteBtn.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_deleteBtn.Name = "addEmployee_deleteBtn";
-            addEmployee_deleteBtn.Size = new Size(132, 43);
-            addEmployee_deleteBtn.TabIndex = 16;
-            addEmployee_deleteBtn.Text = "Delete";
-            addEmployee_deleteBtn.UseVisualStyleBackColor = false;
+            updateBtn.BackColor = Color.FromArgb(33, 11, 97);
+            updateBtn.Cursor = Cursors.Hand;
+            updateBtn.FlatAppearance.BorderSize = 0;
+            updateBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
+            updateBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
+            updateBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
+            updateBtn.FlatStyle = FlatStyle.Flat;
+            updateBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            updateBtn.ForeColor = Color.White;
+            updateBtn.Location = new Point(418, 188);
+            updateBtn.Margin = new Padding(4, 3, 4, 3);
+            updateBtn.Name = "updateBtn";
+            updateBtn.Size = new Size(132, 43);
+            updateBtn.TabIndex = 15;
+            updateBtn.Text = "Update";
+            updateBtn.UseVisualStyleBackColor = false;
+            updateBtn.Click += updateBtn_Click;
             // 
-            // addEmployee_updateBtn
+            // addBtn
             // 
-            addEmployee_updateBtn.BackColor = Color.FromArgb(33, 11, 97);
-            addEmployee_updateBtn.Cursor = Cursors.Hand;
-            addEmployee_updateBtn.FlatAppearance.BorderSize = 0;
-            addEmployee_updateBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_updateBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_updateBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_updateBtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_updateBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_updateBtn.ForeColor = Color.White;
-            addEmployee_updateBtn.Location = new Point(364, 188);
-            addEmployee_updateBtn.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_updateBtn.Name = "addEmployee_updateBtn";
-            addEmployee_updateBtn.Size = new Size(132, 43);
-            addEmployee_updateBtn.TabIndex = 15;
-            addEmployee_updateBtn.Text = "Update";
-            addEmployee_updateBtn.UseVisualStyleBackColor = false;
-            // 
-            // addEmployee_addBtn
-            // 
-            addEmployee_addBtn.BackColor = Color.FromArgb(33, 11, 97);
-            addEmployee_addBtn.Cursor = Cursors.Hand;
-            addEmployee_addBtn.FlatAppearance.BorderSize = 0;
-            addEmployee_addBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_addBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_addBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_addBtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_addBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_addBtn.ForeColor = Color.White;
-            addEmployee_addBtn.Location = new Point(212, 188);
-            addEmployee_addBtn.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_addBtn.Name = "addEmployee_addBtn";
-            addEmployee_addBtn.Size = new Size(132, 43);
-            addEmployee_addBtn.TabIndex = 14;
-            addEmployee_addBtn.Text = "Add";
-            addEmployee_addBtn.UseVisualStyleBackColor = false;
-            // 
-            // addEmployee_importBtn
-            // 
-            addEmployee_importBtn.BackColor = Color.FromArgb(33, 11, 97);
-            addEmployee_importBtn.Cursor = Cursors.Hand;
-            addEmployee_importBtn.FlatAppearance.BorderSize = 0;
-            addEmployee_importBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_importBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
-            addEmployee_importBtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_importBtn.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_importBtn.ForeColor = Color.White;
-            addEmployee_importBtn.Location = new Point(860, 145);
-            addEmployee_importBtn.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_importBtn.Name = "addEmployee_importBtn";
-            addEmployee_importBtn.Size = new Size(96, 27);
-            addEmployee_importBtn.TabIndex = 13;
-            addEmployee_importBtn.Text = "Import";
-            addEmployee_importBtn.UseVisualStyleBackColor = false;
-            // 
-            // addEmployee_picture
-            // 
-            addEmployee_picture.BackColor = SystemColors.ButtonShadow;
-            addEmployee_picture.BorderStyle = BorderStyle.FixedSingle;
-            addEmployee_picture.Location = new Point(861, 39);
-            addEmployee_picture.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_picture.Name = "addEmployee_picture";
-            addEmployee_picture.Size = new Size(95, 106);
-            addEmployee_picture.SizeMode = PictureBoxSizeMode.StretchImage;
-            addEmployee_picture.TabIndex = 12;
-            addEmployee_picture.TabStop = false;
-            // 
-            // addEmployee_position
-            // 
-            addEmployee_position.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_position.FormattingEnabled = true;
-            addEmployee_position.Items.AddRange(new object[] { "Business Management", "Front-End Developer", "Back-End Developer", "Data Administrator", "UI/UX Design" });
-            addEmployee_position.Location = new Point(492, 80);
-            addEmployee_position.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_position.Name = "addEmployee_position";
-            addEmployee_position.Size = new Size(198, 23);
-            addEmployee_position.TabIndex = 11;
+            addBtn.BackColor = Color.FromArgb(33, 11, 97);
+            addBtn.Cursor = Cursors.Hand;
+            addBtn.FlatAppearance.BorderSize = 0;
+            addBtn.FlatAppearance.CheckedBackColor = Color.FromArgb(75, 8, 138);
+            addBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
+            addBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
+            addBtn.FlatStyle = FlatStyle.Flat;
+            addBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addBtn.ForeColor = Color.White;
+            addBtn.Location = new Point(254, 188);
+            addBtn.Margin = new Padding(4, 3, 4, 3);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(132, 43);
+            addBtn.TabIndex = 14;
+            addBtn.Text = "Create";
+            addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(425, 80);
+            label6.Location = new Point(376, 80);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(54, 15);
+            label6.Size = new Size(112, 15);
             label6.TabIndex = 10;
-            label6.Text = "Position:";
+            label6.Text = "Actual Return Date:";
             // 
-            // addEmployee_phoneNum
+            // txtActualStartDate
             // 
-            addEmployee_phoneNum.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_phoneNum.Location = new Point(492, 39);
-            addEmployee_phoneNum.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_phoneNum.Name = "addEmployee_phoneNum";
-            addEmployee_phoneNum.Size = new Size(177, 21);
-            addEmployee_phoneNum.TabIndex = 9;
+            txtActualStartDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtActualStartDate.Location = new Point(492, 39);
+            txtActualStartDate.Margin = new Padding(4, 3, 4, 3);
+            txtActualStartDate.Name = "txtActualStartDate";
+            txtActualStartDate.Size = new Size(177, 21);
+            txtActualStartDate.TabIndex = 9;
             // 
             // label2
             // 
@@ -453,66 +485,55 @@
             label2.Location = new Point(376, 39);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(94, 15);
+            label2.Size = new Size(97, 15);
             label2.TabIndex = 8;
-            label2.Text = "Phone Number:";
-            // 
-            // addEmployee_gender
-            // 
-            addEmployee_gender.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_gender.FormattingEnabled = true;
-            addEmployee_gender.Items.AddRange(new object[] { "Male", "Female", "Others" });
-            addEmployee_gender.Location = new Point(146, 128);
-            addEmployee_gender.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_gender.Name = "addEmployee_gender";
-            addEmployee_gender.Size = new Size(198, 23);
-            addEmployee_gender.TabIndex = 7;
+            label2.Text = "Actual Start Date";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(78, 128);
+            label4.Location = new Point(52, 109);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(51, 15);
+            label4.Size = new Size(78, 15);
             label4.TabIndex = 6;
-            label4.Text = "Gender:";
+            label4.Text = "Customer ID:";
             // 
-            // addEmployee_fullName
+            // txtRequestId
             // 
-            addEmployee_fullName.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_fullName.Location = new Point(146, 87);
-            addEmployee_fullName.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_fullName.Name = "addEmployee_fullName";
-            addEmployee_fullName.Size = new Size(198, 21);
-            addEmployee_fullName.TabIndex = 5;
+            txtRequestId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRequestId.Location = new Point(146, 68);
+            txtRequestId.Margin = new Padding(4, 3, 4, 3);
+            txtRequestId.Name = "txtRequestId";
+            txtRequestId.Size = new Size(156, 21);
+            txtRequestId.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(59, 87);
+            label3.Location = new Point(59, 68);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(67, 15);
+            label3.Size = new Size(71, 15);
             label3.TabIndex = 4;
-            label3.Text = "Full Name:";
+            label3.Text = "Request ID:";
             // 
-            // addEmployee_id
+            // txtTransactionId
             // 
-            addEmployee_id.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_id.Location = new Point(146, 40);
-            addEmployee_id.Margin = new Padding(4, 3, 4, 3);
-            addEmployee_id.Name = "addEmployee_id";
-            addEmployee_id.Size = new Size(156, 21);
-            addEmployee_id.TabIndex = 3;
+            txtTransactionId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTransactionId.Location = new Point(146, 21);
+            txtTransactionId.Margin = new Padding(4, 3, 4, 3);
+            txtTransactionId.Name = "txtTransactionId";
+            txtTransactionId.Size = new Size(156, 21);
+            txtTransactionId.TabIndex = 3;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(44, 40);
+            label8.Location = new Point(44, 21);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
             label8.Size = new Size(89, 15);
@@ -533,7 +554,7 @@
             panel6.BackColor = SystemColors.ButtonHighlight;
             panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Controls.Add(groupBox1);
-            panel6.Controls.Add(dataGridView1);
+            panel6.Controls.Add(dataGridView);
             panel6.Controls.Add(label10);
             panel6.Controls.Add(panel7);
             panel6.Location = new Point(325, 53);
@@ -545,9 +566,9 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(button7);
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(txtFilterValue);
+            groupBox1.Controls.Add(btnReset);
+            groupBox1.Controls.Add(btnFilter);
             groupBox1.Controls.Add(label9);
             groupBox1.Location = new Point(277, 14);
             groupBox1.Name = "groupBox1";
@@ -556,51 +577,45 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Filters";
             // 
-            // button6
+            // btnReset
             // 
-            button6.BackColor = Color.WhiteSmoke;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Location = new Point(519, 21);
-            button6.Name = "button6";
-            button6.Size = new Size(137, 29);
-            button6.TabIndex = 14;
-            button6.Text = "Reset";
-            button6.UseVisualStyleBackColor = false;
+            btnReset.BackColor = Color.WhiteSmoke;
+            btnReset.FlatStyle = FlatStyle.Flat;
+            btnReset.Location = new Point(519, 21);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(137, 29);
+            btnReset.TabIndex = 14;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
-            // button7
+            // btnFilter
             // 
-            button7.BackColor = Color.SteelBlue;
-            button7.FlatAppearance.BorderColor = Color.Purple;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(376, 21);
-            button7.Name = "button7";
-            button7.Size = new Size(137, 29);
-            button7.TabIndex = 13;
-            button7.Text = "Filter";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(134, 25);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(221, 23);
-            comboBox1.TabIndex = 1;
+            btnFilter.BackColor = Color.SteelBlue;
+            btnFilter.FlatAppearance.BorderColor = Color.Purple;
+            btnFilter.FlatStyle = FlatStyle.Flat;
+            btnFilter.ForeColor = Color.White;
+            btnFilter.Location = new Point(376, 21);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(137, 29);
+            btnFilter.TabIndex = 13;
+            btnFilter.Text = "Filter";
+            btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Click += btnFilter_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(10, 30);
             label9.Name = "label9";
-            label9.Size = new Size(118, 15);
+            label9.Size = new Size(86, 15);
             label9.TabIndex = 0;
-            label9.Text = "Filter by Department:";
+            label9.Text = "Filter by status:";
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView.AllowUserToAddRows = false;
+            dataGridView.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 11, 97);
             dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -608,16 +623,17 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.Location = new Point(21, 95);
-            dataGridView1.Margin = new Padding(4, 3, 4, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.Size = new Size(931, 223);
-            dataGridView1.TabIndex = 3;
+            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.EnableHeadersVisualStyles = false;
+            dataGridView.Location = new Point(21, 95);
+            dataGridView.Margin = new Padding(4, 3, 4, 3);
+            dataGridView.Name = "dataGridView";
+            dataGridView.ReadOnly = true;
+            dataGridView.RowHeadersVisible = false;
+            dataGridView.Size = new Size(931, 223);
+            dataGridView.TabIndex = 3;
+            dataGridView.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label10
             // 
@@ -639,7 +655,18 @@
             panel7.Size = new Size(979, 261);
             panel7.TabIndex = 1;
             // 
-            // DashBoard
+            // txtFilterValue
+            // 
+            txtFilterValue.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFilterValue.ForeColor = SystemColors.ScrollBar;
+            txtFilterValue.Location = new Point(117, 26);
+            txtFilterValue.Margin = new Padding(4, 3, 4, 3);
+            txtFilterValue.Name = "txtFilterValue";
+            txtFilterValue.Size = new Size(201, 21);
+            txtFilterValue.TabIndex = 15;
+            txtFilterValue.Text = "Equipment ID or Request ID";
+            // 
+            // Rental_Transactions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -649,7 +676,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "DashBoard";
+            Name = "Rental_Transactions";
             Text = "Rental Transactions";
             Load += DashBoard_Load;
             panel2.ResumeLayout(false);
@@ -662,12 +689,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)addEmployee_picture).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
             ResumeLayout(false);
         }
 
@@ -688,33 +714,36 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox6;
         private Panel panel4;
-        private ComboBox addEmployee_status;
+        private ComboBox txtPaymentstatus;
         private Label label7;
-        private Button addEmployee_clearBtn;
-        private Button addEmployee_deleteBtn;
-        private Button addEmployee_updateBtn;
-        private Button addEmployee_addBtn;
-        private Button addEmployee_importBtn;
-        private PictureBox addEmployee_picture;
-        private ComboBox addEmployee_position;
+        private Button clearBtn;
+        private Button updateBtn;
+        private Button addBtn;
         private Label label6;
-        private TextBox addEmployee_phoneNum;
+        private TextBox txtActualStartDate;
         private Label label2;
-        private ComboBox addEmployee_gender;
         private Label label4;
-        private TextBox addEmployee_fullName;
+        private TextBox txtRequestId;
         private Label label3;
-        private TextBox addEmployee_id;
+        private TextBox txtTransactionId;
         private Label label8;
         private Panel panel5;
         private Panel panel6;
         private GroupBox groupBox1;
-        private Button button6;
-        private Button button7;
-        private ComboBox comboBox1;
+        private Button btnReset;
+        private Button btnFilter;
         private Label label9;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView;
         private Label label10;
         private Panel panel7;
+        private TextBox txtCustomerId;
+        private TextBox txtEquipmentId;
+        private Label label1;
+        private TextBox txtActualReturnDate;
+        private TextBox txtRentalFee;
+        private Label label5;
+        private TextBox txtDeposit;
+        private Label label11;
+        private TextBox txtFilterValue;
     }
 }
