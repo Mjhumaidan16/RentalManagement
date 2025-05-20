@@ -16,6 +16,12 @@ namespace AdvanceProjectObjects
         {
         }
 
+        public virtual DbSet<AspNetRole> AspNetRoles { get; set; } = null!;
+        public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; } = null!;
+        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
+        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
+        public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Document> Documents { get; set; } = null!;
         public virtual DbSet<Equipment> Equipment { get; set; } = null!;
@@ -29,19 +35,56 @@ namespace AdvanceProjectObjects
         public virtual DbSet<ReturnRecord> ReturnRecords { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
-
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EquipmentRentalDB;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EquipmentRentalDB;Trusted_Connection=True;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AspNetRole>(entity =>
+            {
+                entity.HasIndex(e => e.NormalizedName, "RoleNameIndex")
+                    .IsUnique()
+                    .HasFilter("([NormalizedName] IS NOT NULL)");
+            });
+
+            modelBuilder.Entity<AspNetUser>(entity =>
+            {
+                entity.HasIndex(e => e.NormalizedUserName, "UserNameIndex")
+                    .IsUnique()
+                    .HasFilter("([NormalizedUserName] IS NOT NULL)");
+
+                entity.HasMany(d => d.Roles)
+                    .WithMany(p => p.Users)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "AspNetUserRole",
+                        l => l.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId"),
+                        r => r.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId"),
+                        j =>
+                        {
+                            j.HasKey("UserId", "RoleId");
+
+                            j.ToTable("AspNetUserRoles");
+
+                            j.HasIndex(new[] { "RoleId" }, "IX_AspNetUserRoles_RoleId");
+                        });
+            });
+
+            modelBuilder.Entity<AspNetUserLogin>(entity =>
+            {
+                entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
+            });
+
+            modelBuilder.Entity<AspNetUserToken>(entity =>
+            {
+                entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name });
+            });
+
             modelBuilder.Entity<Document>(entity =>
             {
                 entity.Property(e => e.UploadedAt).HasDefaultValueSql("(getdate())");
@@ -72,6 +115,8 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<Feedback>(entity =>
             {
                 entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Visible).HasDefaultValueSql("(CONVERT([bit],(1)))");
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Feedbacks)
@@ -105,7 +150,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<MaintenanceRecord>(entity =>
             {
                 entity.HasKey(e => e.MaintenanceId)
-                    .HasName("PK__Maintena__E60542B5E38FFE33");
+                    .HasName("PK__Maintena__E60542B5A8FAAA80");
 
                 entity.HasOne(d => d.Equipment)
                     .WithMany(p => p.MaintenanceRecords)
@@ -137,7 +182,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<RentalRequest>(entity =>
             {
                 entity.HasKey(e => e.RequestId)
-                    .HasName("PK__RentalRe__33A8519AA59F17D3");
+                    .HasName("PK__RentalRe__33A8519AC98CF21E");
 
                 entity.Property(e => e.DateRequested).HasDefaultValueSql("(getdate())");
 
@@ -155,7 +200,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<RentalTransaction>(entity =>
             {
                 entity.HasKey(e => e.TransactionId)
-                    .HasName("PK__RentalTr__55433A4BB04930D7");
+                    .HasName("PK__RentalTr__55433A4BF12F39EE");
 
                 entity.Property(e => e.DateProcessed).HasDefaultValueSql("(getdate())");
 
@@ -180,7 +225,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<ReturnRecord>(entity =>
             {
                 entity.HasKey(e => e.ReturnId)
-                    .HasName("PK__ReturnRe__F445E988341E98BE");
+                    .HasName("PK__ReturnRe__F445E9883AB9D3CB");
 
                 entity.HasOne(d => d.Transaction)
                     .WithMany(p => p.ReturnRecords)

@@ -26,8 +26,6 @@ CREATE TABLE Users (
     PasswordHash VARCHAR(50) NOT NULL,
     Role VARCHAR(20) CHECK (Role IN ('Admin', 'Manager', 'Customer')) NOT NULL,
     CreatedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-    PhoneNumber BIGINT,
-    Address VARCHAR(50),
     LastLogin DATETIME
 );
 
@@ -167,10 +165,10 @@ CREATE TABLE MaintenanceRecords (
 );
 
 -- INSERT USERS
-INSERT INTO Users (Name, Email, PasswordHash, PhoneNumber, Address, Role) VALUES
-('Admin User', 'admin@example.com', 'hashed123', 9731234567, 'Admin HQ', 'Admin'),
-('John Doe', 'john@example.com', 'hashed456', 9739876543, 'Customer Street', 'Customer'),
-('Manager One', 'manager@example.com', 'hashed789', 9731122334, 'Manager Avenue', 'Manager');
+INSERT INTO Users (Name, Email, PasswordHash, Role) VALUES
+('Admin User', 'admin@example.com', 'Hashed123!', 'Admin'),
+('John Doe', 'john@example.com', 'Hashed123!', 'Customer'),
+('Manager One', 'manager@example.com', 'Hashed123!', 'Manager');
 
 -- INSERT CATEGORIES
 INSERT INTO Categories (Name, Description) VALUES

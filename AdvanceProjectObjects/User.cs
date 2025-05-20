@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdvanceProjectObjects
 {
-    [Index("Email", Name = "UQ__Users__A9D105344CC0BA2E", IsUnique = true)]
+    [Index("Email", Name = "UQ__Users__A9D10534FCFF2303", IsUnique = true)]
     public partial class User
     {
         public User()
@@ -36,10 +36,6 @@ namespace AdvanceProjectObjects
         public string Role { get; set; } = null!;
         [Column(TypeName = "datetime")]
         public DateTime? CreatedAt { get; set; }
-        public long? PhoneNumber { get; set; }
-        [StringLength(50)]
-        [Unicode(false)]
-        public string? Address { get; set; }
         [Column(TypeName = "datetime")]
         public DateTime? LastLogin { get; set; }
 

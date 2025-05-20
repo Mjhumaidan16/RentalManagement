@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdvanceProjectObjects
 {
-    [Index("Name", Name = "UQ__Categori__737584F6D046131B", IsUnique = true)]
+    [Index("Name", Name = "UQ__Categori__737584F695A85FDF", IsUnique = true)]
     public partial class Category
     {
         public Category()
