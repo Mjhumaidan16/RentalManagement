@@ -79,7 +79,7 @@ namespace WindowsFormsApp3
 
         private void adm_pass_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void verifiyadm_Load(object sender, EventArgs e)
@@ -89,20 +89,20 @@ namespace WindowsFormsApp3
 
         private void adm_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void TextBox4_Click(object sender, EventArgs e)
         {
 
-            
+
 
         }
 
         private void TextBox1_Click(object sender, EventArgs e)
         {
 
-            
+
 
         }
     }

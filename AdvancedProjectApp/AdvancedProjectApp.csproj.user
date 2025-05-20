@@ -7,10 +7,13 @@
     <Compile Update="EquipmentInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Rental Transactions.cs">
+    <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Rental Transactions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FraddUser.cs">

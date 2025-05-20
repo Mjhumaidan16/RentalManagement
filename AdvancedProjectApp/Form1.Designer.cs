@@ -123,7 +123,7 @@
             // Login
             // 
             Login.AutoSize = true;
-            Login.Font = new Font("Microsoft Sans Serif", 15.25F);
+            Login.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Regular, GraphicsUnit.Point);
             Login.Location = new Point(728, 57);
             Login.Margin = new Padding(4, 0, 4, 0);
             Login.Name = "Login";
@@ -137,7 +137,7 @@
             Email.Anchor = AnchorStyles.None;
             Email.BackColor = SystemColors.ButtonFace;
             Email.BorderStyle = BorderStyle.None;
-            Email.Font = new Font("Microsoft Sans Serif", 12.25F);
+            Email.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             Email.ForeColor = Color.Gray;
             Email.Location = new Point(35, 17);
             Email.Margin = new Padding(4);
@@ -176,7 +176,7 @@
             // 
             // textBox3
             // 
-            textBox3.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox3.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.Location = new Point(200, 20);
             textBox3.Margin = new Padding(4);
             textBox3.Name = "textBox3";
@@ -206,7 +206,7 @@
             // 
             label1.AutoSize = true;
             label1.Dock = DockStyle.Left;
-            label1.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label1.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Red;
             label1.Location = new Point(0, 0);
             label1.Margin = new Padding(4, 0, 4, 0);
@@ -239,7 +239,7 @@
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Left;
-            label2.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label2.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Red;
             label2.Location = new Point(0, 0);
             label2.Margin = new Padding(4, 0, 4, 0);
@@ -275,7 +275,7 @@
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox2.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(200, 20);
             textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
@@ -287,7 +287,7 @@
             Password.Anchor = AnchorStyles.None;
             Password.BackColor = SystemColors.ButtonFace;
             Password.BorderStyle = BorderStyle.None;
-            Password.Font = new Font("Microsoft Sans Serif", 12.25F);
+            Password.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             Password.ForeColor = Color.Gray;
             Password.Location = new Point(35, 17);
             Password.Margin = new Padding(4);
@@ -301,7 +301,7 @@
             // Email_Label
             // 
             Email_Label.AutoSize = true;
-            Email_Label.Font = new Font("Microsoft Sans Serif", 10.25F);
+            Email_Label.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             Email_Label.Location = new Point(439, 149);
             Email_Label.Margin = new Padding(4, 0, 4, 0);
             Email_Label.Name = "Email_Label";
@@ -313,7 +313,7 @@
             // Password_Label
             // 
             Password_Label.AutoSize = true;
-            Password_Label.Font = new Font("Microsoft Sans Serif", 10.25F);
+            Password_Label.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             Password_Label.Location = new Point(439, 258);
             Password_Label.Margin = new Padding(4, 0, 4, 0);
             Password_Label.Name = "Password_Label";
@@ -362,7 +362,7 @@
             Controls.Add(CreateNewAcount);
             Controls.Add(ForgotPassword);
             Controls.Add(Login_Btn);
-            Font = new Font("Microsoft Sans Serif", 10.25F);
+            Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4);
             Name = "Form1";
@@ -386,35 +386,34 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Login_Btn;
-        private System.Windows.Forms.LinkLabel ForgotPassword;
-        private System.Windows.Forms.LinkLabel CreateNewAcount;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label Login;
-        private System.Windows.Forms.TextBox Email;
-        private System.Windows.Forms.Panel emailPanel;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel Panel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.Label Email_Label;
-        private System.Windows.Forms.Label Password_Label;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private Button Login_Btn;
+        private LinkLabel ForgotPassword;
+        private LinkLabel CreateNewAcount;
+        private Panel panel1;
+        private Panel panel2;
+        private Label Login;
+        private TextBox Email;
+        private Panel emailPanel;
+        private Panel panel4;
+        private TextBox textBox3;
+        private Panel panel3;
+        private Panel Panel5;
+        private Label label1;
+        private Panel panel6;
+        private Panel panel7;
+        private Label label2;
+        private Panel panel8;
+        private Panel panel9;
+        private TextBox textBox2;
+        private TextBox Password;
+        private Label Email_Label;
+        private Label Password_Label;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
 

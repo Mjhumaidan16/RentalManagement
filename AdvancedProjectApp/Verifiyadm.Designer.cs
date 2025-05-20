@@ -79,7 +79,7 @@
             // password
             // 
             password.AutoSize = true;
-            password.Font = new Font("Microsoft Sans Serif", 10.25F);
+            password.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             password.Location = new Point(491, 380);
             password.Margin = new Padding(5, 0, 5, 0);
             password.Name = "password";
@@ -90,7 +90,7 @@
             // email
             // 
             email.AutoSize = true;
-            email.Font = new Font("Microsoft Sans Serif", 10.25F);
+            email.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             email.Location = new Point(491, 254);
             email.Margin = new Padding(5, 0, 5, 0);
             email.Name = "email";
@@ -103,7 +103,7 @@
             adm.Anchor = AnchorStyles.None;
             adm.BackColor = SystemColors.ButtonFace;
             adm.BorderStyle = BorderStyle.None;
-            adm.Font = new Font("Microsoft Sans Serif", 12.25F);
+            adm.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             adm.ForeColor = Color.Gray;
             adm.Location = new Point(10, 20);
             adm.Margin = new Padding(5);
@@ -116,7 +116,7 @@
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox2.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(233, 23);
             textBox2.Margin = new Padding(5);
             textBox2.Name = "textBox2";
@@ -152,7 +152,7 @@
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Left;
-            label2.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label2.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Red;
             label2.Location = new Point(0, 0);
             label2.Margin = new Padding(5, 0, 5, 0);
@@ -195,7 +195,7 @@
             // Signup
             // 
             Signup.AutoSize = true;
-            Signup.Font = new Font("Microsoft Sans Serif", 15.25F);
+            Signup.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Regular, GraphicsUnit.Point);
             Signup.Location = new Point(748, 54);
             Signup.Margin = new Padding(5, 0, 5, 0);
             Signup.Name = "Signup";
@@ -225,7 +225,7 @@
             // 
             // verifiy_btn
             // 
-            verifiy_btn.Font = new Font("Microsoft Sans Serif", 10.25F);
+            verifiy_btn.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             verifiy_btn.Location = new Point(741, 658);
             verifiy_btn.Margin = new Padding(5);
             verifiy_btn.Name = "verifiy_btn";
@@ -259,7 +259,7 @@
             // 
             label4.AutoSize = true;
             label4.Dock = DockStyle.Left;
-            label4.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label4.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Red;
             label4.Location = new Point(0, 0);
             label4.Margin = new Padding(5, 0, 5, 0);
@@ -295,7 +295,7 @@
             // 
             // textBox7
             // 
-            textBox7.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox7.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox7.Location = new Point(233, 23);
             textBox7.Margin = new Padding(5);
             textBox7.Name = "textBox7";
@@ -307,7 +307,7 @@
             adm_pass.Anchor = AnchorStyles.None;
             adm_pass.BackColor = SystemColors.ButtonFace;
             adm_pass.BorderStyle = BorderStyle.None;
-            adm_pass.Font = new Font("Microsoft Sans Serif", 12.25F);
+            adm_pass.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             adm_pass.ForeColor = Color.Gray;
             adm_pass.Location = new Point(12, 20);
             adm_pass.Margin = new Padding(5);
@@ -368,35 +368,34 @@
             panel17.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
 
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label password;
-        private System.Windows.Forms.Label email;
-        private System.Windows.Forms.TextBox adm;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Signup;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button verifiy_btn;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox adm_pass;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
+        private PictureBox pictureBox2;
+        private Label password;
+        private Label email;
+        private TextBox adm;
+        private TextBox textBox2;
+        private Panel panel9;
+        private Panel panel8;
+        private Label label2;
+        private Panel panel7;
+        private Panel panel6;
+        private PictureBox pictureBox1;
+        private Label Signup;
+        private Panel panel2;
+        private Button verifiy_btn;
+        private Panel panel14;
+        private Panel panel15;
+        private Label label4;
+        private Panel panel16;
+        private Panel panel17;
+        private TextBox textBox7;
+        private TextBox adm_pass;
+        private Panel panel3;
+        private Panel panel1;
     }
 }

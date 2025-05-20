@@ -1,3 +1,4 @@
+-- Use master context
 USE master;
 GO
 
@@ -9,11 +10,11 @@ BEGIN
 END;
 GO
 
--- Recreate the EquipmentRentalDB
+-- Create the database
 CREATE DATABASE EquipmentRentalDB;
 GO
 
--- Switch to the newly created database
+-- Switch to the new database
 USE EquipmentRentalDB;
 GO
 
@@ -165,57 +166,72 @@ CREATE TABLE MaintenanceRecords (
     FOREIGN KEY (EquipmentID) REFERENCES Equipment(EquipmentID) ON DELETE CASCADE
 );
 
-
-
--- USERS
+-- INSERT USERS
 INSERT INTO Users (Name, Email, PasswordHash, PhoneNumber, Address, Role) VALUES
 ('Admin User', 'admin@example.com', 'hashed123', 9731234567, 'Admin HQ', 'Admin'),
 ('John Doe', 'john@example.com', 'hashed456', 9739876543, 'Customer Street', 'Customer'),
 ('Manager One', 'manager@example.com', 'hashed789', 9731122334, 'Manager Avenue', 'Manager');
 
--- CATEGORIES
+-- INSERT CATEGORIES
 INSERT INTO Categories (Name, Description) VALUES
 ('Cameras', 'Photography and video equipment'),
-('Laptops', 'Computing devices for rent');
+('Laptops', 'Computing devices for rent'),
+('Tools', 'Construction and mechanical tools');
 
--- EQUIPMENT
+-- INSERT EQUIPMENT
 INSERT INTO Equipment (Name, Description, CategoryID, RentalPrice, AvailabilityStatus, ConditionStatus) VALUES
 ('Canon EOS R5', 'High-quality camera', 1, 50.00, 'Available', 'New'),
-('Dell XPS 15', 'Powerful laptop', 2, 40.00, 'Available', 'Good');
+('Dell XPS 15', 'Powerful laptop', 2, 40.00, 'Available', 'Good'),
+('Bosch Hammer Drill', 'Heavy-duty drill for concrete and masonry', 3, 30.00, 'Available', 'New'),
+('Stanley Claw Hammer', 'Durable steel hammer for carpentry', 3, 10.00, 'Available', 'Good');
 
--- RENTAL REQUESTS
+-- INSERT RENTAL REQUESTS
 INSERT INTO RentalRequests (CustomerID, EquipmentID, RentalStartDate, ReturnDate, TotalCost, Status) VALUES
-(2, 1, '2025-05-20', '2025-05-25', 250.00, 'Pending');
+(2, 1, '2025-05-20', '2025-05-25', 250.00, 'Pending'),
+(2, 3, '2025-06-01', '2025-06-03', 60.00, 'Approved'),
+(2, 4, '2025-06-05', '2025-06-07', 20.00, 'Pending');
 
--- RENTAL TRANSACTIONS
+-- INSERT RENTAL TRANSACTIONS
 INSERT INTO RentalTransactions (RequestID, CustomerID, EquipmentID, ActualStartDate, RentalFee, Deposit, PaymentStatus, RentalPeriod) VALUES
-(1, 2, 1, '2025-05-20', 250.00, 50.00, 'Paid', 5);
+(1, 2, 1, '2025-05-20', 250.00, 50.00, 'Paid', 5),
+(2, 2, 3, '2025-06-01', 60.00, 10.00, 'Paid', 2),
+(3, 2, 4, '2025-06-05', 20.00, 5.00, 'Pending', 2);
 
--- RETURN RECORDS
+-- INSERT RETURN RECORDS
 INSERT INTO ReturnRecords (TransactionID, ActualReturnDate, ReturnCondition, LateReturnFees, AdditionalCharges) VALUES
-(1, '2025-05-25', 'Good', 0.00, 0.00);
+(1, '2025-05-25', 'Good', 0.00, 0.00),
+(2, '2025-06-03', 'Good', 0.00, 0.00);
 
--- FEEDBACK
+-- INSERT FEEDBACK
 INSERT INTO Feedback (CustomerID, EquipmentID, Rating, Comment, TransactionID) VALUES
-(2, 1, 5, 'Amazing experience!', 1);
+(2, 1, 5, 'Amazing experience!', 1),
+(2, 3, 4, 'Worked great for my renovation project.', 2);
 
--- DOCUMENTS
+-- INSERT DOCUMENTS
 INSERT INTO Documents (RentalTransactionID, FileName, FileType, FilePath, UserID) VALUES
-(1, 'contract.pdf', 'PDF', '/files/contracts/contract1.pdf', 2);
+(1, 'contract.pdf', 'PDF', '/files/contracts/contract1.pdf', 2),
+(2, 'drill_rental_agreement.pdf', 'PDF', '/files/contracts/drill_contract.pdf', 2);
 
--- NOTIFICATIONS
+-- INSERT NOTIFICATIONS
 INSERT INTO Notifications (UserID, MessageContent, Type, Status) VALUES
-(2, 'Your rental request is pending approval.', 'Rental Approval', 'Unread');
+(2, 'Your rental request is pending approval.', 'Rental Approval', 'Unread'),
+(2, 'Your drill rental has been approved.', 'Rental Approval', 'Read'),
+(2, 'Your hammer rental request is pending.', 'Rental Approval', 'Unread');
 
--- LOGS
+-- INSERT LOGS
 INSERT INTO Logs (UserID, Action, Source, Details) VALUES
-(2, 'Submitted rental request', 'Web', 'User requested Canon EOS R5 for 5 days.');
+(2, 'Submitted rental request', 'Web', 'User requested Canon EOS R5 for 5 days.'),
+(2, 'Requested Bosch Hammer Drill rental', 'Web', 'User selected 2-day rental.'),
+(2, 'Requested Stanley Claw Hammer rental', 'Web', 'User selected 2-day rental.');
 
--- PAYMENTS
+-- INSERT PAYMENTS
 INSERT INTO Payments (TransactionID, Amount, PaymentMethod, Status) VALUES
-(1, 300.00, 'Credit Card', 'Successful');
+(1, 300.00, 'Credit Card', 'Successful'),
+(2, 70.00, 'PayPal', 'Successful'),
+(3, 25.00, 'Credit Card', 'Pending');
 
--- MAINTENANCE RECORDS
+-- INSERT MAINTENANCE RECORDS
 INSERT INTO MaintenanceRecords (EquipmentID, MaintenanceDate, Description, Cost, Status) VALUES
-(1, '2025-05-18', 'Lens cleaning and firmware update', 20.00, 'Completed');
-
+(1, '2025-05-18', 'Lens cleaning and firmware update', 20.00, 'Completed'),
+(3, '2025-05-19', 'Battery replacement and testing', 15.00, 'Completed'),
+(4, '2025-05-17', 'Handle inspection and grip repair', 5.00, 'Completed');

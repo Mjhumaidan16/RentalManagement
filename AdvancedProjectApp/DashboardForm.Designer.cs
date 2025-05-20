@@ -155,7 +155,7 @@
             button6.BackColor = Color.SteelBlue;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
             button6.Location = new Point(95, 470);
             button6.Name = "button6";
@@ -209,7 +209,7 @@
             button5.BackColor = Color.SteelBlue;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
             button5.Location = new Point(93, 396);
             button5.Name = "button5";
@@ -217,6 +217,7 @@
             button5.TabIndex = 30;
             button5.Text = "Logs";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox1
             // 
@@ -233,7 +234,7 @@
             button4.BackColor = Color.SteelBlue;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
             button4.Location = new Point(93, 326);
             button4.Name = "button4";
@@ -248,7 +249,7 @@
             button3.BackColor = Color.SteelBlue;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
             button3.Location = new Point(93, 270);
             button3.Name = "button3";
@@ -263,7 +264,7 @@
             button2.BackColor = Color.SteelBlue;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
             button2.Location = new Point(93, 199);
             button2.Name = "button2";
@@ -278,7 +279,7 @@
             button1.BackColor = Color.SteelBlue;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(93, 138);
             button1.Name = "button1";
@@ -337,7 +338,7 @@
             // 
             // lblTodaySales
             // 
-            lblTodaySales.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold);
+            lblTodaySales.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblTodaySales.Location = new Point(6, 133);
             lblTodaySales.Name = "lblTodaySales";
             lblTodaySales.Size = new Size(140, 37);
@@ -379,7 +380,7 @@
             // 
             // lblTopSellingProduct
             // 
-            lblTopSellingProduct.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold);
+            lblTopSellingProduct.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblTopSellingProduct.Location = new Point(6, 127);
             lblTopSellingProduct.Name = "lblTopSellingProduct";
             lblTopSellingProduct.Size = new Size(223, 51);
@@ -421,7 +422,7 @@
             // 
             // lblTodayOrders
             // 
-            lblTodayOrders.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold);
+            lblTodayOrders.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblTodayOrders.Location = new Point(6, 133);
             lblTodayOrders.Name = "lblTodayOrders";
             lblTodayOrders.Size = new Size(140, 37);
@@ -463,7 +464,7 @@
             // 
             // lblTotalSales
             // 
-            lblTotalSales.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold);
+            lblTotalSales.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotalSales.Location = new Point(6, 129);
             lblTotalSales.Name = "lblTotalSales";
             lblTotalSales.Size = new Size(223, 49);
@@ -505,7 +506,7 @@
             // 
             // lblCustomers
             // 
-            lblCustomers.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold);
+            lblCustomers.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCustomers.Location = new Point(6, 129);
             lblCustomers.Name = "lblCustomers";
             lblCustomers.Size = new Size(140, 49);

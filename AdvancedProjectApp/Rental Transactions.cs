@@ -99,7 +99,10 @@ namespace AdvancedProjectApp
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Log Logs = new Log(); // optionally pass user
+            this.Hide();
+            Logs.FormClosed += (s, args) => this.Close();
+            Logs.Show();
         }
 
 

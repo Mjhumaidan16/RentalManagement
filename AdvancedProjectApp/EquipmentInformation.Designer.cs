@@ -174,6 +174,7 @@
             button5.TabIndex = 30;
             button5.Text = "Logs";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox1
             // 

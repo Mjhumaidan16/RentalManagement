@@ -2042,19 +2042,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\202202728\\.nuget\\packages\\": {}
+    "C:\\Users\\202000488\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj",
+      "projectUniqueName": "C:\\Users\\202000488\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj",
       "projectName": "AdvanceProjectObjects",
-      "projectPath": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj",
-      "packagesPath": "C:\\Users\\202202728\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\obj\\",
+      "projectPath": "C:\\Users\\202000488\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj",
+      "packagesPath": "C:\\Users\\202000488\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\202000488\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\202202728\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\202000488\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

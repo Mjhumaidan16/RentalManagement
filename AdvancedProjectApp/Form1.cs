@@ -12,7 +12,7 @@ using AdvanceProjectObjects;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
 
         EquipmentRentalDBContext equipmentDBContext;
@@ -93,7 +93,9 @@ namespace WindowsFormsApp3
             {
                 Email.ForeColor = Color.Black;
 
-            } catch {
+            }
+            catch
+            {
 
 
             }
