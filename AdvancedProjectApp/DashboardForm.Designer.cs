@@ -33,6 +33,8 @@
             panel6 = new Panel();
             pictureBox6 = new PictureBox();
             panel7 = new Panel();
+            pictureBox12 = new PictureBox();
+            button6 = new Button();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -64,11 +66,10 @@
             pictureBox11 = new PictureBox();
             label2 = new Label();
             lblCustomers = new Label();
-            pictureBox12 = new PictureBox();
-            button6 = new Button();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -85,7 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // panel5
@@ -139,6 +139,30 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(284, 722);
             panel7.TabIndex = 27;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(32, 470);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(40, 43);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox12.TabIndex = 36;
+            pictureBox12.TabStop = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.SteelBlue;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(95, 470);
+            button6.Name = "button6";
+            button6.Size = new Size(169, 52);
+            button6.TabIndex = 35;
+            button6.Text = "SginOut";
+            button6.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
@@ -217,6 +241,7 @@
             button4.TabIndex = 29;
             button4.Text = "Equipment Information";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -488,30 +513,6 @@
             lblCustomers.Text = "lblCustomers";
             lblCustomers.TextAlign = ContentAlignment.TopCenter;
             // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(32, 470);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(40, 43);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 36;
-            pictureBox12.TabStop = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.SteelBlue;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(95, 470);
-            button6.Name = "button6";
-            button6.Size = new Size(169, 52);
-            button6.TabIndex = 35;
-            button6.Text = "SginOut";
-            button6.UseVisualStyleBackColor = false;
-            // 
             // DashboardForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -526,6 +527,7 @@
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -542,7 +544,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
         }
 

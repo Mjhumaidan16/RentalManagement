@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace AdvancedProjectObjects
+namespace AdvanceProjectObjects
 {
     public partial class EquipmentRentalDBContext : DbContext
     {
@@ -40,338 +40,155 @@ namespace AdvancedProjectObjects
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>(entity =>
-            {
-                entity.HasIndex(e => e.Name, "UQ__Categori__737584F6D26E7B12")
-                    .IsUnique();
-
-                entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
-
-                entity.Property(e => e.Description).HasColumnType("text");
-
-                entity.Property(e => e.Name)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-            });
-
             modelBuilder.Entity<Document>(entity =>
             {
-                entity.Property(e => e.DocumentId).HasColumnName("DocumentID");
-
-                entity.Property(e => e.FileName)
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.FilePath)
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.FileType)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.RentalTransactionId).HasColumnName("RentalTransactionID");
-
-                entity.Property(e => e.UploadedAt)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
+                entity.Property(e => e.UploadedAt).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.RentalTransaction)
                     .WithMany(p => p.Documents)
                     .HasForeignKey(d => d.RentalTransactionId)
-                    .HasConstraintName("FK__Documents__Renta__46E78A0C");
+                    .HasConstraintName("FK__Documents__Renta__4AB81AF0");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Documents)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK__Documents__UserI__4BAC3F29");
             });
 
             modelBuilder.Entity<Equipment>(entity =>
             {
-                entity.Property(e => e.EquipmentId).HasColumnName("EquipmentID");
+                entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
 
-                entity.Property(e => e.AvailabilityStatus)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
-
-                entity.Property(e => e.ConditionStatus)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.CreatedAt)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.Description).HasColumnType("text");
-
-                entity.Property(e => e.Name)
-                    .HasMaxLength(30)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.RentalPrice).HasColumnType("decimal(10, 2)");
+                entity.Property(e => e.LastUpdated).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Equipment)
                     .HasForeignKey(d => d.CategoryId)
-                    .HasConstraintName("FK__Equipment__Categ__2F10007B");
+                    .HasConstraintName("FK__Equipment__Categ__300424B4");
             });
 
             modelBuilder.Entity<Feedback>(entity =>
             {
-                entity.ToTable("Feedback");
-
-                entity.Property(e => e.FeedbackId).HasColumnName("FeedbackID");
-
-                entity.Property(e => e.Comment).HasColumnType("text");
-
-                entity.Property(e => e.CreatedAt)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
-                entity.Property(e => e.EquipmentId).HasColumnName("EquipmentID");
+                entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Feedbacks)
                     .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Feedback__Custom__4222D4EF");
+                    .HasConstraintName("FK__Feedback__Custom__44FF419A");
 
                 entity.HasOne(d => d.Equipment)
                     .WithMany(p => p.Feedbacks)
                     .HasForeignKey(d => d.EquipmentId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Feedback__Equipm__4316F928");
+                    .HasConstraintName("FK__Feedback__Equipm__45F365D3");
+
+                entity.HasOne(d => d.Transaction)
+                    .WithMany(p => p.Feedbacks)
+                    .HasForeignKey(d => d.TransactionId)
+                    .HasConstraintName("FK__Feedback__Transa__46E78A0C");
             });
 
             modelBuilder.Entity<Log>(entity =>
             {
-                entity.Property(e => e.LogId).HasColumnName("LogID");
-
-                entity.Property(e => e.Action)
-                    .HasMaxLength(75)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Source)
-                    .HasMaxLength(30)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Timestamp)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.UserId).HasColumnName("UserID");
+                entity.Property(e => e.Timestamp).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Logs)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Logs__UserID__5165187F");
+                    .HasConstraintName("FK__Logs__UserID__5629CD9C");
             });
 
             modelBuilder.Entity<MaintenanceRecord>(entity =>
             {
                 entity.HasKey(e => e.MaintenanceId)
-                    .HasName("PK__Maintena__E60542B54D2A6F51");
-
-                entity.Property(e => e.MaintenanceId).HasColumnName("MaintenanceID");
-
-                entity.Property(e => e.Cost).HasColumnType("decimal(10, 2)");
-
-                entity.Property(e => e.Description).HasColumnType("text");
-
-                entity.Property(e => e.EquipmentId).HasColumnName("EquipmentID");
-
-                entity.Property(e => e.MaintenanceDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Status)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                    .HasName("PK__Maintena__E60542B51E68BCAF");
 
                 entity.HasOne(d => d.Equipment)
                     .WithMany(p => p.MaintenanceRecords)
                     .HasForeignKey(d => d.EquipmentId)
-                    .HasConstraintName("FK__Maintenan__Equip__5AEE82B9");
+                    .HasConstraintName("FK__Maintenan__Equip__5FB337D6");
             });
 
             modelBuilder.Entity<Notification>(entity =>
             {
-                entity.Property(e => e.NotificationId).HasColumnName("NotificationID");
-
-                entity.Property(e => e.CreatedAt)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.MessageContent).HasColumnType("text");
-
-                entity.Property(e => e.Status)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Type)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.UserId).HasColumnName("UserID");
+                entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Notifications)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Notificat__UserI__4CA06362");
+                    .HasConstraintName("FK__Notificat__UserI__5165187F");
             });
 
             modelBuilder.Entity<Payment>(entity =>
             {
-                entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
-
-                entity.Property(e => e.Amount).HasColumnType("decimal(10, 2)");
-
-                entity.Property(e => e.PaymentDate)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.PaymentMethod)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Status)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.TransactionId).HasColumnName("TransactionID");
+                entity.Property(e => e.PaymentDate).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.Transaction)
                     .WithMany(p => p.Payments)
                     .HasForeignKey(d => d.TransactionId)
-                    .HasConstraintName("FK__Payments__Transa__571DF1D5");
+                    .HasConstraintName("FK__Payments__Transa__5BE2A6F2");
             });
 
             modelBuilder.Entity<RentalRequest>(entity =>
             {
                 entity.HasKey(e => e.RequestId)
-                    .HasName("PK__RentalRe__33A8519A2129CCD0");
+                    .HasName("PK__RentalRe__33A8519A97AE1794");
 
-                entity.Property(e => e.RequestId).HasColumnName("RequestID");
-
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
-                entity.Property(e => e.EquipmentId).HasColumnName("EquipmentID");
-
-                entity.Property(e => e.RentalStartDate).HasColumnType("datetime");
-
-                entity.Property(e => e.ReturnDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Status)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.TotalCost).HasColumnType("decimal(10, 2)");
+                entity.Property(e => e.DateRequested).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.RentalRequests)
                     .HasForeignKey(d => d.CustomerId)
-                    .HasConstraintName("FK__RentalReq__Custo__32E0915F");
+                    .HasConstraintName("FK__RentalReq__Custo__34C8D9D1");
 
                 entity.HasOne(d => d.Equipment)
                     .WithMany(p => p.RentalRequests)
                     .HasForeignKey(d => d.EquipmentId)
-                    .HasConstraintName("FK__RentalReq__Equip__33D4B598");
+                    .HasConstraintName("FK__RentalReq__Equip__35BCFE0A");
             });
 
             modelBuilder.Entity<RentalTransaction>(entity =>
             {
                 entity.HasKey(e => e.TransactionId)
-                    .HasName("PK__RentalTr__55433A4B3D30485A");
+                    .HasName("PK__RentalTr__55433A4BB3680736");
 
-                entity.Property(e => e.TransactionId).HasColumnName("TransactionID");
-
-                entity.Property(e => e.ActualReturnDate).HasColumnType("datetime");
-
-                entity.Property(e => e.ActualStartDate).HasColumnType("datetime");
-
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
-                entity.Property(e => e.Deposit).HasColumnType("decimal(10, 2)");
-
-                entity.Property(e => e.EquipmentId).HasColumnName("EquipmentID");
-
-                entity.Property(e => e.PaymentStatus)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.RentalFee).HasColumnType("decimal(10, 2)");
-
-                entity.Property(e => e.RequestId).HasColumnName("RequestID");
+                entity.Property(e => e.DateProcessed).HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.RentalTransactions)
                     .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__RentalTra__Custo__38996AB5");
+                    .HasConstraintName("FK__RentalTra__Custo__3B75D760");
 
                 entity.HasOne(d => d.Equipment)
                     .WithMany(p => p.RentalTransactions)
                     .HasForeignKey(d => d.EquipmentId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__RentalTra__Equip__398D8EEE");
+                    .HasConstraintName("FK__RentalTra__Equip__3C69FB99");
 
                 entity.HasOne(d => d.Request)
                     .WithMany(p => p.RentalTransactions)
                     .HasForeignKey(d => d.RequestId)
-                    .HasConstraintName("FK__RentalTra__Reque__37A5467C");
+                    .HasConstraintName("FK__RentalTra__Reque__3A81B327");
             });
 
             modelBuilder.Entity<ReturnRecord>(entity =>
             {
                 entity.HasKey(e => e.ReturnId)
-                    .HasName("PK__ReturnRe__F445E988B717FB67");
-
-                entity.Property(e => e.ReturnId).HasColumnName("ReturnID");
-
-                entity.Property(e => e.ActualReturnDate).HasColumnType("datetime");
-
-                entity.Property(e => e.AdditionalCharges).HasColumnType("decimal(10, 2)");
-
-                entity.Property(e => e.LateReturnFees).HasColumnType("decimal(10, 2)");
-
-                entity.Property(e => e.ReturnCondition)
-                    .HasMaxLength(30)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.TransactionId).HasColumnName("TransactionID");
+                    .HasName("PK__ReturnRe__F445E988575D24AF");
 
                 entity.HasOne(d => d.Transaction)
                     .WithMany(p => p.ReturnRecords)
                     .HasForeignKey(d => d.TransactionId)
-                    .HasConstraintName("FK__ReturnRec__Trans__3D5E1FD2");
+                    .HasConstraintName("FK__ReturnRec__Trans__403A8C7D");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasIndex(e => e.Email, "UQ__Users__A9D10534301A5BF7")
-                    .IsUnique();
-
-                entity.Property(e => e.UserId).HasColumnName("UserID");
-
-                entity.Property(e => e.CreatedAt)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.Email)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Name)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.PasswordHash)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Role)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
             });
 
             OnModelCreatingPartial(modelBuilder);

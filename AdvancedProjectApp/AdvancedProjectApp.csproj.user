@@ -19,7 +19,7 @@
     <Compile Update="Rental Requests.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ReturnRecord.cs">
+    <Compile Update="ReturnRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Verifiyadm.cs">

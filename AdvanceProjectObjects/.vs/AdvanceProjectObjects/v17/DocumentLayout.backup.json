@@ -3,10 +3,25 @@
   "WorkspaceRootPath": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\returnrecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\returnrecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -14,6 +29,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advanceprojectobjects\\rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|solutionrelative:rentaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advanceprojectobjects\\rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|solutionrelative:rentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advanceprojectobjects\\returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|solutionrelative:returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,18 +46,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\DashboardForm.cs",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\DashboardForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:08:29.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rental Requests.cs [Design]",
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\DashboardForm.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\DashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:08:27.165Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Rental Requests.cs",
               "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs",
               "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Requests.cs",
-              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs [Design]",
-              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Requests.cs [Design]",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Requests.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwDkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T00:14:20.296Z",
+              "WhenOpened": "2025-05-20T02:06:20.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReturnRecordForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\ReturnRecordForm.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\ReturnRecordForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:51:56.946Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rental Transactions.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Transactions.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:43:58.928Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -45,34 +118,73 @@
               "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Transactions.cs",
               "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs",
               "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Transactions.cs",
-              "ViewState": "AgIAAPsAAAAAAAAAAAAUwEgBAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:39:41.233Z",
+              "WhenOpened": "2025-05-20T01:44:00.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Rental Transactions.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs",
-              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Transactions.cs",
-              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
-              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "Rental Requests.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Requests.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Requests.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:39:34.806Z",
+              "WhenOpened": "2025-05-20T02:06:18.2Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "ReturnRecordForm.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAcwCQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:39:50.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RentalTransaction.cs",
               "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\RentalTransaction.cs",
               "RelativeDocumentMoniker": "RentalTransaction.cs",
               "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\RentalTransaction.cs",
               "RelativeToolTip": "RentalTransaction.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:40:29.1Z",
+              "WhenOpened": "2025-05-20T02:01:41.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RentalRequest.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\RentalRequest.cs",
+              "RelativeDocumentMoniker": "RentalRequest.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\RentalRequest.cs",
+              "RelativeToolTip": "RentalRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:01:36.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReturnRecord.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\ReturnRecord.cs",
+              "RelativeDocumentMoniker": "ReturnRecord.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\ReturnRecord.cs",
+              "RelativeToolTip": "ReturnRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:29:43.486Z",
               "EditorCaption": ""
             }
           ]

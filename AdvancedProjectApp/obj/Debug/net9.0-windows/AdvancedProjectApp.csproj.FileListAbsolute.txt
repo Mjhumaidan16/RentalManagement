@@ -158,3 +158,5 @@ C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvancedProjectApp\obj\Debug\n
 C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvancedProjectApp\obj\Debug\net9.0-windows\ref\AdvancedProjectApp.dll
 C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvancedProjectApp\obj\Debug\net9.0-windows\AdvancedProjectApp.DashboardForm.resources
 C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvancedProjectApp\obj\Debug\net9.0-windows\AdvancedProjectApp.Rental_Transactions.resources
+C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvancedProjectApp\obj\Debug\net9.0-windows\AdvancedProjectApp.EquipmentInformation.resources
+C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvancedProjectApp\obj\Debug\net9.0-windows\AdvancedProjectApp.ReturnRecordForm.resources

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AdvancedProjectObjects;
+using AdvanceProjectObjects;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace AdvancedProjectApp
@@ -83,12 +83,18 @@ namespace AdvancedProjectApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            ReturnRecordForm ReturnRec = new ReturnRecordForm(); // optionally pass user
+            this.Hide();
+            ReturnRec.FormClosed += (s, args) => this.Close();
+            ReturnRec.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            EquipmentInformation EquipmentInfo = new EquipmentInformation(); // optionally pass user
+            this.Hide();
+            EquipmentInfo.FormClosed += (s, args) => this.Close();
+            EquipmentInfo.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

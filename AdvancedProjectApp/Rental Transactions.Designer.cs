@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rental_Transactions));
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel2 = new Panel();
             panel3 = new Panel();
             panel1 = new Panel();
@@ -69,13 +69,13 @@
             panel5 = new Panel();
             panel6 = new Panel();
             groupBox1 = new GroupBox();
+            txtFilterValue = new TextBox();
             btnReset = new Button();
             btnFilter = new Button();
             label9 = new Label();
             dataGridView = new DataGridView();
             label10 = new Label();
             panel7 = new Panel();
-            txtFilterValue = new TextBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -577,6 +577,17 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Filters";
             // 
+            // txtFilterValue
+            // 
+            txtFilterValue.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFilterValue.ForeColor = SystemColors.ScrollBar;
+            txtFilterValue.Location = new Point(117, 26);
+            txtFilterValue.Margin = new Padding(4, 3, 4, 3);
+            txtFilterValue.Name = "txtFilterValue";
+            txtFilterValue.Size = new Size(201, 21);
+            txtFilterValue.TabIndex = 15;
+            txtFilterValue.Text = "Equipment ID or Rental Request ID";
+            // 
             // btnReset
             // 
             btnReset.BackColor = Color.WhiteSmoke;
@@ -616,14 +627,14 @@
             // 
             dataGridView.AllowUserToAddRows = false;
             dataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 11, 97);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(33, 11, 97);
+            dataGridViewCellStyle1.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView.EnableHeadersVisualStyles = false;
             dataGridView.Location = new Point(21, 95);
@@ -654,17 +665,6 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(979, 261);
             panel7.TabIndex = 1;
-            // 
-            // txtFilterValue
-            // 
-            txtFilterValue.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtFilterValue.ForeColor = SystemColors.ScrollBar;
-            txtFilterValue.Location = new Point(117, 26);
-            txtFilterValue.Margin = new Padding(4, 3, 4, 3);
-            txtFilterValue.Name = "txtFilterValue";
-            txtFilterValue.Size = new Size(201, 21);
-            txtFilterValue.TabIndex = 15;
-            txtFilterValue.Text = "Equipment ID or Request ID";
             // 
             // Rental_Transactions
             // 

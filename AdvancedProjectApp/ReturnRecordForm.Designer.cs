@@ -1,6 +1,6 @@
 ﻿namespace AdvancedProjectApp
 {
-    partial class ReturnRecord
+    partial class ReturnRecordForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnRecord));
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnRecordForm));
             dataGridView = new DataGridView();
             panel7 = new Panel();
             txtFilterValue = new TextBox();
@@ -39,14 +39,13 @@
             groupBox1 = new GroupBox();
             panel6 = new Panel();
             label10 = new Label();
-            txtDeposit = new TextBox();
+            txtAdditionalCharges = new TextBox();
             label11 = new Label();
-            txtRentalFee = new TextBox();
+            txtLateReturnFees = new TextBox();
             label5 = new Label();
             txtActualReturnDate = new TextBox();
-            txtEquipmentId = new TextBox();
+            txtReturnId = new TextBox();
             label1 = new Label();
-            txtCustomerId = new TextBox();
             panel2 = new Panel();
             panel3 = new Panel();
             panel1 = new Panel();
@@ -61,21 +60,16 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            txtPaymentstatus = new ComboBox();
+            txtReturnCondition = new ComboBox();
             label7 = new Label();
             clearBtn = new Button();
             updateBtn = new Button();
             addBtn = new Button();
             label6 = new Label();
-            txtActualStartDate = new TextBox();
-            label2 = new Label();
-            label4 = new Label();
-            txtRequestId = new TextBox();
             txtTransactionId = new TextBox();
             label8 = new Label();
             panel5 = new Panel();
             panel4 = new Panel();
-            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             groupBox1.SuspendLayout();
             panel6.SuspendLayout();
@@ -94,14 +88,14 @@
             // 
             dataGridView.AllowUserToAddRows = false;
             dataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(33, 11, 97);
-            dataGridViewCellStyle1.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(33, 11, 97);
+            dataGridViewCellStyle4.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView.EnableHeadersVisualStyles = false;
             dataGridView.Location = new Point(21, 95);
@@ -111,6 +105,7 @@
             dataGridView.RowHeadersVisible = false;
             dataGridView.Size = new Size(931, 223);
             dataGridView.TabIndex = 3;
+            dataGridView.CellContentClick += dataGridView_CellContentClick;
             // 
             // panel7
             // 
@@ -142,6 +137,7 @@
             btnReset.TabIndex = 14;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
             // btnFilter
             // 
@@ -155,6 +151,7 @@
             btnFilter.TabIndex = 13;
             btnFilter.Text = "Filter";
             btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Click += btnFilter_Click;
             // 
             // label9
             // 
@@ -204,34 +201,34 @@
             label10.TabIndex = 2;
             label10.Text = "Rental Data";
             // 
-            // txtDeposit
+            // txtAdditionalCharges
             // 
-            txtDeposit.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtDeposit.Location = new Point(802, 93);
-            txtDeposit.Margin = new Padding(4, 3, 4, 3);
-            txtDeposit.Name = "txtDeposit";
-            txtDeposit.Size = new Size(131, 21);
-            txtDeposit.TabIndex = 27;
+            txtAdditionalCharges.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAdditionalCharges.Location = new Point(809, 93);
+            txtAdditionalCharges.Margin = new Padding(4, 3, 4, 3);
+            txtAdditionalCharges.Name = "txtAdditionalCharges";
+            txtAdditionalCharges.Size = new Size(131, 21);
+            txtAdditionalCharges.TabIndex = 27;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(724, 96);
+            label11.Location = new Point(688, 96);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(52, 15);
+            label11.Size = new Size(113, 15);
             label11.TabIndex = 26;
-            label11.Text = "Deposit:";
+            label11.Text = "Additional Charges:";
             // 
-            // txtRentalFee
+            // txtLateReturnFees
             // 
-            txtRentalFee.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtRentalFee.Location = new Point(802, 39);
-            txtRentalFee.Margin = new Padding(4, 3, 4, 3);
-            txtRentalFee.Name = "txtRentalFee";
-            txtRentalFee.Size = new Size(131, 21);
-            txtRentalFee.TabIndex = 25;
+            txtLateReturnFees.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtLateReturnFees.Location = new Point(809, 39);
+            txtLateReturnFees.Margin = new Padding(4, 3, 4, 3);
+            txtLateReturnFees.Name = "txtLateReturnFees";
+            txtLateReturnFees.Size = new Size(131, 21);
+            txtLateReturnFees.TabIndex = 25;
             // 
             // label5
             // 
@@ -240,47 +237,38 @@
             label5.Location = new Point(724, 42);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(70, 15);
+            label5.Size = new Size(77, 15);
             label5.TabIndex = 24;
-            label5.Text = "Rental Fee:";
+            label5.Text = "Return Fees:";
             // 
             // txtActualReturnDate
             // 
             txtActualReturnDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtActualReturnDate.Location = new Point(492, 80);
+            txtActualReturnDate.Location = new Point(492, 42);
             txtActualReturnDate.Margin = new Padding(4, 3, 4, 3);
             txtActualReturnDate.Name = "txtActualReturnDate";
             txtActualReturnDate.Size = new Size(177, 21);
             txtActualReturnDate.TabIndex = 23;
             // 
-            // txtEquipmentId
+            // txtReturnId
             // 
-            txtEquipmentId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtEquipmentId.Location = new Point(146, 152);
-            txtEquipmentId.Margin = new Padding(4, 3, 4, 3);
-            txtEquipmentId.Name = "txtEquipmentId";
-            txtEquipmentId.Size = new Size(156, 21);
-            txtEquipmentId.TabIndex = 22;
+            txtReturnId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtReturnId.Location = new Point(146, 42);
+            txtReturnId.Margin = new Padding(4, 3, 4, 3);
+            txtReturnId.Name = "txtReturnId";
+            txtReturnId.Size = new Size(156, 21);
+            txtReturnId.TabIndex = 22;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(52, 152);
+            label1.Location = new Point(52, 42);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(62, 15);
             label1.TabIndex = 21;
-            label1.Text = "Equipment ID:";
-            // 
-            // txtCustomerId
-            // 
-            txtCustomerId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCustomerId.Location = new Point(146, 109);
-            txtCustomerId.Margin = new Padding(4, 3, 4, 3);
-            txtCustomerId.Name = "txtCustomerId";
-            txtCustomerId.Size = new Size(156, 21);
-            txtCustomerId.TabIndex = 20;
+            label1.Text = "Return ID:";
             // 
             // panel2
             // 
@@ -409,6 +397,7 @@
             button4.TabIndex = 29;
             button4.Text = "Equipment Information";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -421,8 +410,9 @@
             button3.Name = "button3";
             button3.Size = new Size(169, 52);
             button3.TabIndex = 28;
-            button3.Text = " Return Records";
+            button3.Text = " Return Transaction";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -437,6 +427,7 @@
             button2.TabIndex = 27;
             button2.Text = "Rental Requset";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -452,28 +443,29 @@
             button1.Text = "DashBoard";
             button1.UseMnemonic = false;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // txtPaymentstatus
+            // txtReturnCondition
             // 
-            txtPaymentstatus.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPaymentstatus.FormattingEnabled = true;
-            txtPaymentstatus.Items.AddRange(new object[] { "Paid", "Pending", "Overdue" });
-            txtPaymentstatus.Location = new Point(492, 125);
-            txtPaymentstatus.Margin = new Padding(4, 3, 4, 3);
-            txtPaymentstatus.Name = "txtPaymentstatus";
-            txtPaymentstatus.Size = new Size(177, 23);
-            txtPaymentstatus.TabIndex = 19;
+            txtReturnCondition.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtReturnCondition.FormattingEnabled = true;
+            txtReturnCondition.Items.AddRange(new object[] { "Good", "Damaged", "Lost" });
+            txtReturnCondition.Location = new Point(492, 94);
+            txtReturnCondition.Margin = new Padding(4, 3, 4, 3);
+            txtReturnCondition.Name = "txtReturnCondition";
+            txtReturnCondition.Size = new Size(177, 23);
+            txtReturnCondition.TabIndex = 19;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(376, 128);
+            label7.Location = new Point(376, 97);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(95, 15);
+            label7.Size = new Size(102, 15);
             label7.TabIndex = 18;
-            label7.Text = "Payment Status:";
+            label7.Text = "Return Condition:";
             // 
             // clearBtn
             // 
@@ -493,6 +485,7 @@
             clearBtn.TabIndex = 17;
             clearBtn.Text = "Clear";
             clearBtn.UseVisualStyleBackColor = false;
+            clearBtn.Click += clearBtn_Click;
             // 
             // updateBtn
             // 
@@ -512,6 +505,7 @@
             updateBtn.TabIndex = 15;
             updateBtn.Text = "Update";
             updateBtn.UseVisualStyleBackColor = false;
+            updateBtn.Click += updateBtn_Click;
             // 
             // addBtn
             // 
@@ -531,62 +525,23 @@
             addBtn.TabIndex = 14;
             addBtn.Text = "Create";
             addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(376, 80);
+            label6.Location = new Point(376, 42);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(112, 15);
             label6.TabIndex = 10;
             label6.Text = "Actual Return Date:";
             // 
-            // txtActualStartDate
-            // 
-            txtActualStartDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtActualStartDate.Location = new Point(492, 39);
-            txtActualStartDate.Margin = new Padding(4, 3, 4, 3);
-            txtActualStartDate.Name = "txtActualStartDate";
-            txtActualStartDate.Size = new Size(177, 21);
-            txtActualStartDate.TabIndex = 9;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(376, 39);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(97, 15);
-            label2.TabIndex = 8;
-            label2.Text = "Actual Start Date";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(52, 109);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(78, 15);
-            label4.TabIndex = 6;
-            label4.Text = "Customer ID:";
-            // 
-            // txtRequestId
-            // 
-            txtRequestId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtRequestId.Location = new Point(146, 68);
-            txtRequestId.Margin = new Padding(4, 3, 4, 3);
-            txtRequestId.Name = "txtRequestId";
-            txtRequestId.Size = new Size(156, 21);
-            txtRequestId.TabIndex = 5;
-            // 
             // txtTransactionId
             // 
             txtTransactionId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTransactionId.Location = new Point(146, 21);
+            txtTransactionId.Location = new Point(146, 96);
             txtTransactionId.Margin = new Padding(4, 3, 4, 3);
             txtTransactionId.Name = "txtTransactionId";
             txtTransactionId.Size = new Size(156, 21);
@@ -596,7 +551,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(44, 21);
+            label8.Location = new Point(44, 96);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
             label8.Size = new Size(89, 15);
@@ -616,25 +571,19 @@
             // 
             panel4.BackColor = SystemColors.ButtonHighlight;
             panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(txtDeposit);
+            panel4.Controls.Add(txtAdditionalCharges);
             panel4.Controls.Add(label11);
-            panel4.Controls.Add(txtRentalFee);
+            panel4.Controls.Add(txtLateReturnFees);
             panel4.Controls.Add(label5);
             panel4.Controls.Add(txtActualReturnDate);
-            panel4.Controls.Add(txtEquipmentId);
+            panel4.Controls.Add(txtReturnId);
             panel4.Controls.Add(label1);
-            panel4.Controls.Add(txtCustomerId);
-            panel4.Controls.Add(txtPaymentstatus);
+            panel4.Controls.Add(txtReturnCondition);
             panel4.Controls.Add(label7);
             panel4.Controls.Add(clearBtn);
             panel4.Controls.Add(updateBtn);
             panel4.Controls.Add(addBtn);
             panel4.Controls.Add(label6);
-            panel4.Controls.Add(txtActualStartDate);
-            panel4.Controls.Add(label2);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(txtRequestId);
-            panel4.Controls.Add(label3);
             panel4.Controls.Add(txtTransactionId);
             panel4.Controls.Add(label8);
             panel4.Controls.Add(panel5);
@@ -644,18 +593,7 @@
             panel4.Size = new Size(978, 248);
             panel4.TabIndex = 31;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(59, 68);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(71, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Request ID:";
-            // 
-            // ReturnRecord
+            // ReturnRecordForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -664,8 +602,9 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panel4);
-            Name = "ReturnRecord";
+            Name = "ReturnRecordForm";
             Text = "ReturnRecord";
+            Load += ReturnRecord_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -695,14 +634,13 @@
         private GroupBox groupBox1;
         private Panel panel6;
         private Label label10;
-        private TextBox txtDeposit;
+        private TextBox txtAdditionalCharges;
         private Label label11;
-        private TextBox txtRentalFee;
+        private TextBox txtLateReturnFees;
         private Label label5;
         private TextBox txtActualReturnDate;
-        private TextBox txtEquipmentId;
+        private TextBox txtReturnId;
         private Label label1;
-        private TextBox txtCustomerId;
         private Panel panel2;
         private Panel panel3;
         private Panel panel1;
@@ -717,20 +655,15 @@
         private Button button3;
         private Button button2;
         private Button button1;
-        private ComboBox txtPaymentstatus;
+        private ComboBox txtReturnCondition;
         private Label label7;
         private Button clearBtn;
         private Button updateBtn;
         private Button addBtn;
         private Label label6;
-        private TextBox txtActualStartDate;
-        private Label label2;
-        private Label label4;
-        private TextBox txtRequestId;
         private TextBox txtTransactionId;
         private Label label8;
         private Panel panel5;
         private Panel panel4;
-        private Label label3;
     }
 }

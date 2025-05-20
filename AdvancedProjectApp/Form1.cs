@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AdvancedProjectApp;
-using AdvancedProjectObjects;
+using AdvanceProjectObjects;
 
 namespace WindowsFormsApp3
 {

@@ -1,12 +1,162 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\equipmentinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\equipmentinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advanceprojectobjects\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|solutionrelative:equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\rental requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24291BE-CFA2-E772-7858-F45613E6D629}|..\\AdvancedProjectApp\\AdvancedProjectApp.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advancedprojectapp\\returnrecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|c:\\users\\mjhum\\downloads\\rentalmanagement_formapp\\advanceprojectobjects\\returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780CDCB1-F825-4826-AEE5-FF71F47A4E8A}|AdvanceProjectObjects.csproj|solutionrelative:returnrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rental Requests.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Requests.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Requests.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:43:11.142Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rental Transactions.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Transactions.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Transactions.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwCoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:38:39.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rental Transactions.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Transactions.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Transactions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:38:37.805Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\Equipment.cs",
+              "RelativeDocumentMoniker": "Equipment.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\Equipment.cs",
+              "RelativeToolTip": "Equipment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:17:12.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EquipmentInformation.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\EquipmentInformation.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\EquipmentInformation.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\EquipmentInformation.cs",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\EquipmentInformation.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:16:31.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EquipmentInformation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\EquipmentInformation.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\EquipmentInformation.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\EquipmentInformation.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\EquipmentInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:11:28.234Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Rental Requests.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\Rental Requests.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\Rental Requests.cs",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\Rental Requests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwCoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T02:43:12.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReturnRecordForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "RelativeDocumentMoniker": "..\\AdvancedProjectApp\\ReturnRecordForm.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\ReturnRecordForm.cs [Design]",
+              "RelativeToolTip": "..\\AdvancedProjectApp\\ReturnRecordForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:51:56.946Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReturnRecord.cs",
+              "DocumentMoniker": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\ReturnRecord.cs",
+              "RelativeDocumentMoniker": "ReturnRecord.cs",
+              "ToolTip": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\ReturnRecord.cs",
+              "RelativeToolTip": "ReturnRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:29:43.486Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
