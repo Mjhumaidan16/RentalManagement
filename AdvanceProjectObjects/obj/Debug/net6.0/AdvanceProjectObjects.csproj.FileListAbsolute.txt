@@ -13,3 +13,17 @@ C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvanceProjectObjects\obj\Debu
 C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.pdb
 C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.genruntimeconfig.cache
 C:\Users\mjhum\Downloads\RentalManagement_FormAPP\AdvanceProjectObjects\obj\Debug\net6.0\ref\AdvanceProjectObjects.dll
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\bin\Debug\net6.0\AdvanceProjectObjects.deps.json
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\bin\Debug\net6.0\AdvanceProjectObjects.runtimeconfig.json
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\bin\Debug\net6.0\AdvanceProjectObjects.dll
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\bin\Debug\net6.0\AdvanceProjectObjects.pdb
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.csproj.AssemblyReference.cache
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.AssemblyInfoInputs.cache
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.AssemblyInfo.cs
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.csproj.CoreCompileInputs.cache
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.dll
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\refint\AdvanceProjectObjects.dll
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.pdb
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\AdvanceProjectObjects.genruntimeconfig.cache
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvanceProjectObjects\obj\Debug\net6.0\ref\AdvanceProjectObjects.dll

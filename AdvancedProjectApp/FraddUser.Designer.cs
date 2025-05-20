@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp3
 {
-    partial class FraddUsers 
+    partial class FraddUsers
     {
 
         /// <summary>
@@ -126,7 +126,7 @@
             // 
             // textBox7
             // 
-            textBox7.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox7.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox7.Location = new Point(233, 23);
             textBox7.Margin = new Padding(5);
             textBox7.Name = "textBox7";
@@ -138,7 +138,7 @@
             adm_pass.Anchor = AnchorStyles.None;
             adm_pass.BackColor = SystemColors.ButtonFace;
             adm_pass.BorderStyle = BorderStyle.None;
-            adm_pass.Font = new Font("Microsoft Sans Serif", 12.25F);
+            adm_pass.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             adm_pass.ForeColor = Color.Gray;
             adm_pass.Location = new Point(10, 20);
             adm_pass.Margin = new Padding(5);
@@ -164,7 +164,7 @@
             // 
             label4.AutoSize = true;
             label4.Dock = DockStyle.Left;
-            label4.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label4.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Red;
             label4.Location = new Point(0, 0);
             label4.Margin = new Padding(5, 0, 5, 0);
@@ -188,7 +188,7 @@
             Number.Anchor = AnchorStyles.None;
             Number.BackColor = SystemColors.ButtonFace;
             Number.BorderStyle = BorderStyle.None;
-            Number.Font = new Font("Microsoft Sans Serif", 12.25F);
+            Number.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             Number.ForeColor = Color.Gray;
             Number.Location = new Point(10, 20);
             Number.Margin = new Padding(5);
@@ -199,7 +199,7 @@
             // 
             // textBox5
             // 
-            textBox5.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox5.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.Location = new Point(233, 23);
             textBox5.Margin = new Padding(5);
             textBox5.Name = "textBox5";
@@ -235,7 +235,7 @@
             // 
             label3.AutoSize = true;
             label3.Dock = DockStyle.Left;
-            label3.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label3.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Red;
             label3.Location = new Point(0, 0);
             label3.Margin = new Padding(5, 0, 5, 0);
@@ -300,7 +300,7 @@
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Left;
-            label2.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label2.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Red;
             label2.Location = new Point(0, 0);
             label2.Margin = new Padding(5, 0, 5, 0);
@@ -336,7 +336,7 @@
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox2.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(233, 23);
             textBox2.Margin = new Padding(5);
             textBox2.Name = "textBox2";
@@ -348,7 +348,7 @@
             adm.Anchor = AnchorStyles.None;
             adm.BackColor = SystemColors.ButtonFace;
             adm.BorderStyle = BorderStyle.None;
-            adm.Font = new Font("Microsoft Sans Serif", 12.25F);
+            adm.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             adm.ForeColor = Color.Gray;
             adm.Location = new Point(10, 20);
             adm.Margin = new Padding(5);
@@ -371,7 +371,7 @@
             // Titel
             // 
             Titel.AutoSize = true;
-            Titel.Font = new Font("Microsoft Sans Serif", 15.25F);
+            Titel.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Regular, GraphicsUnit.Point);
             Titel.Location = new Point(785, 55);
             Titel.Margin = new Padding(5, 0, 5, 0);
             Titel.Name = "Titel";
@@ -402,7 +402,7 @@
             // password
             // 
             password.AutoSize = true;
-            password.Font = new Font("Microsoft Sans Serif", 10.25F);
+            password.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             password.Location = new Point(530, 392);
             password.Margin = new Padding(5, 0, 5, 0);
             password.Name = "password";
@@ -413,7 +413,7 @@
             // email
             // 
             email.AutoSize = true;
-            email.Font = new Font("Microsoft Sans Serif", 10.25F);
+            email.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             email.Location = new Point(530, 299);
             email.Margin = new Padding(5, 0, 5, 0);
             email.Name = "email";
@@ -432,7 +432,7 @@
             // 
             // verifiy_btn
             // 
-            verifiy_btn.Font = new Font("Microsoft Sans Serif", 10.25F);
+            verifiy_btn.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             verifiy_btn.Location = new Point(791, 693);
             verifiy_btn.Margin = new Padding(5);
             verifiy_btn.Name = "verifiy_btn";
@@ -446,7 +446,7 @@
             // 
             checkedListBox1.BackColor = SystemColors.ButtonFace;
             checkedListBox1.BorderStyle = BorderStyle.None;
-            checkedListBox1.Font = new Font("Microsoft Sans Serif", 12.25F);
+            checkedListBox1.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "Admin", "Manager" });
             checkedListBox1.Location = new Point(712, 110);
@@ -459,7 +459,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label1.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(533, 122);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
@@ -504,7 +504,7 @@
             // 
             label5.AutoSize = true;
             label5.Dock = DockStyle.Left;
-            label5.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label5.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Red;
             label5.Location = new Point(0, 0);
             label5.Margin = new Padding(5, 0, 5, 0);
@@ -540,7 +540,7 @@
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox1.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(233, 23);
             textBox1.Margin = new Padding(5);
             textBox1.Name = "textBox1";
@@ -552,7 +552,7 @@
             textBox3.Anchor = AnchorStyles.None;
             textBox3.BackColor = SystemColors.ButtonFace;
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Microsoft Sans Serif", 12.25F);
+            textBox3.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.Gray;
             textBox3.Location = new Point(10, 20);
             textBox3.Margin = new Padding(5);
@@ -575,7 +575,7 @@
             // FullName
             // 
             FullName.AutoSize = true;
-            FullName.Font = new Font("Microsoft Sans Serif", 10.25F);
+            FullName.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             FullName.Location = new Point(533, 203);
             FullName.Margin = new Padding(5, 0, 5, 0);
             FullName.Name = "FullName";
@@ -613,7 +613,7 @@
             // 
             label6.AutoSize = true;
             label6.Dock = DockStyle.Left;
-            label6.Font = new Font("Microsoft Sans Serif", 10.25F);
+            label6.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Red;
             label6.Location = new Point(0, 0);
             label6.Margin = new Padding(5, 0, 5, 0);
@@ -649,7 +649,7 @@
             // 
             // textBox4
             // 
-            textBox4.Font = new Font("Microsoft Sans Serif", 10.25F);
+            textBox4.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.Location = new Point(233, 23);
             textBox4.Margin = new Padding(5);
             textBox4.Name = "textBox4";
@@ -661,7 +661,7 @@
             textBox6.Anchor = AnchorStyles.None;
             textBox6.BackColor = SystemColors.ButtonFace;
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Microsoft Sans Serif", 12.25F);
+            textBox6.Font = new Font("Microsoft Sans Serif", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.ForeColor = Color.Gray;
             textBox6.Location = new Point(9, 20);
             textBox6.Margin = new Padding(5);
@@ -685,7 +685,7 @@
             // Phone
             // 
             Phone.AutoSize = true;
-            Phone.Font = new Font("Microsoft Sans Serif", 10.25F);
+            Phone.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             Phone.Location = new Point(530, 493);
             Phone.Margin = new Padding(5, 0, 5, 0);
             Phone.Name = "Phone";
@@ -707,7 +707,7 @@
             // Address
             // 
             Address.AutoSize = true;
-            Address.Font = new Font("Microsoft Sans Serif", 10.25F);
+            Address.Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             Address.Location = new Point(530, 588);
             Address.Margin = new Padding(5, 0, 5, 0);
             Address.Name = "Address";
@@ -789,52 +789,51 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox adm_pass;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox Number;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox adm;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Titel;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label password;
-        private System.Windows.Forms.Label email;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button verifiy_btn;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label FullName;
+        private Panel panel17;
+        private TextBox textBox7;
+        private TextBox adm_pass;
+        private Panel panel16;
+        private Label label4;
+        private Panel panel15;
+        private TextBox Number;
+        private TextBox textBox5;
+        private Panel panel13;
+        private Panel panel12;
+        private Label label3;
+        private Panel panel11;
+        private Panel panel10;
+        private PictureBox pictureBox2;
+        private Panel panel6;
+        private Panel panel7;
+        private Label label2;
+        private Panel panel8;
+        private Panel panel9;
+        private TextBox textBox2;
+        private TextBox adm;
+        private PictureBox pictureBox1;
+        private Label Titel;
+        private Panel panel2;
+        private Panel panel14;
+        private Label password;
+        private Label email;
+        private Panel panel1;
+        private Button verifiy_btn;
+        private CheckedListBox checkedListBox1;
+        private Label label1;
+        private PictureBox pictureBox3;
+        private Panel panel3;
+        private Panel panel4;
+        private Label label5;
+        private Panel panel5;
+        private Panel panel18;
+        private TextBox textBox1;
+        private TextBox textBox3;
+        private PictureBox pictureBox4;
+        private Label FullName;
         private ImageList imageList1;
         private Panel panel19;
         private Panel panel20;

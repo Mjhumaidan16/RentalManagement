@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rental_Requests));
             txtStatus = new ComboBox();
             label7 = new Label();
@@ -87,7 +87,7 @@
             // 
             // txtStatus
             // 
-            txtStatus.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtStatus.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtStatus.FormattingEnabled = true;
             txtStatus.Items.AddRange(new object[] { "Pending", "Approved", "Rejected" });
             txtStatus.Location = new Point(599, 126);
@@ -99,7 +99,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(483, 126);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
@@ -116,7 +116,7 @@
             btnUpdate.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
             btnUpdate.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
             btnUpdate.FlatStyle = FlatStyle.Flat;
-            btnUpdate.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnUpdate.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnUpdate.ForeColor = Color.White;
             btnUpdate.Location = new Point(319, 187);
             btnUpdate.Margin = new Padding(4, 3, 4, 3);
@@ -130,7 +130,7 @@
             // ReturnDate
             // 
             ReturnDate.AutoSize = true;
-            ReturnDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ReturnDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             ReturnDate.Location = new Point(483, 81);
             ReturnDate.Margin = new Padding(4, 0, 4, 0);
             ReturnDate.Name = "ReturnDate";
@@ -140,7 +140,7 @@
             // 
             // txtStartDate
             // 
-            txtStartDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtStartDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtStartDate.Location = new Point(599, 40);
             txtStartDate.Margin = new Padding(4, 3, 4, 3);
             txtStartDate.Name = "txtStartDate";
@@ -150,7 +150,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(483, 40);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -161,7 +161,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(44, 146);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
@@ -171,7 +171,7 @@
             // 
             // txtEquipmentId
             // 
-            txtEquipmentId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEquipmentId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtEquipmentId.Location = new Point(146, 102);
             txtEquipmentId.Margin = new Padding(4, 3, 4, 3);
             txtEquipmentId.Name = "txtEquipmentId";
@@ -181,7 +181,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(44, 102);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -191,7 +191,7 @@
             // 
             // txtCustomerId
             // 
-            txtCustomerId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCustomerId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtCustomerId.Location = new Point(146, 60);
             txtCustomerId.Margin = new Padding(4, 3, 4, 3);
             txtCustomerId.Name = "txtCustomerId";
@@ -201,7 +201,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(44, 60);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
@@ -222,14 +222,14 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 11, 97);
-            dataGridViewCellStyle2.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(33, 11, 97);
+            dataGridViewCellStyle1.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.Location = new Point(21, 95);
@@ -244,7 +244,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(21, 24);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -290,7 +290,7 @@
             // 
             // txtReturnDate
             // 
-            txtReturnDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtReturnDate.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtReturnDate.Location = new Point(599, 81);
             txtReturnDate.Margin = new Padding(4, 3, 4, 3);
             txtReturnDate.Name = "txtReturnDate";
@@ -299,7 +299,7 @@
             // 
             // txtRequestId
             // 
-            txtRequestId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRequestId.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtRequestId.Location = new Point(146, 20);
             txtRequestId.Margin = new Padding(4, 3, 4, 3);
             txtRequestId.Name = "txtRequestId";
@@ -309,7 +309,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(44, 20);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
@@ -326,7 +326,7 @@
             clearBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 8, 138);
             clearBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(75, 8, 138);
             clearBtn.FlatStyle = FlatStyle.Flat;
-            clearBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            clearBtn.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             clearBtn.ForeColor = Color.White;
             clearBtn.Location = new Point(483, 187);
             clearBtn.Margin = new Padding(4, 3, 4, 3);
@@ -339,7 +339,7 @@
             // 
             // txtTotalCost
             // 
-            txtTotalCost.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTotalCost.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTotalCost.Location = new Point(146, 139);
             txtTotalCost.Margin = new Padding(4, 3, 4, 3);
             txtTotalCost.Name = "txtTotalCost";
@@ -513,7 +513,7 @@
             button5.BackColor = Color.SteelBlue;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
             button5.Location = new Point(93, 396);
             button5.Name = "button5";
@@ -537,7 +537,7 @@
             button4.BackColor = Color.SteelBlue;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
             button4.Location = new Point(93, 326);
             button4.Name = "button4";
@@ -545,13 +545,14 @@
             button4.TabIndex = 29;
             button4.Text = "Equipment Information";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.SteelBlue;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
             button3.Location = new Point(93, 270);
             button3.Name = "button3";
@@ -566,7 +567,7 @@
             button2.BackColor = Color.SteelBlue;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
             button2.Location = new Point(93, 199);
             button2.Name = "button2";
@@ -581,13 +582,13 @@
             button1.BackColor = Color.SteelBlue;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.Location = new Point(93, 138);
             button1.Name = "button1";
             button1.Size = new Size(169, 52);
             button1.TabIndex = 26;
-            button1.Text = "Rental Requests";
+            button1.Text = "Dashboard";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
             // 

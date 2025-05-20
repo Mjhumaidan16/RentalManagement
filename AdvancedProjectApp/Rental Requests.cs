@@ -41,7 +41,7 @@ namespace AdvancedProjectApp
             RefreshData();
 
             comboStatusFilter.Items.Clear();
-            comboStatusFilter.Items.AddRange(new string[] {"Paid", "Pending", "Overdue" });
+            comboStatusFilter.Items.AddRange(new string[] { "Paid", "Pending", "Overdue" });
             comboStatusFilter.SelectedIndex = -1;
         }
         private void button1_Click_1(object sender, EventArgs e)
@@ -64,10 +64,10 @@ namespace AdvancedProjectApp
         private void button3_Click_1(object sender, EventArgs e)
         {
 
-            Rental_Transactions RentalTr = new Rental_Transactions(); // optionally pass user
+            ReturnRecordForm ReturnRec = new ReturnRecordForm(); // optionally pass user
             this.Hide();
-            RentalTr.FormClosed += (s, args) => this.Close();
-            RentalTr.Show();
+            ReturnRec.FormClosed += (s, args) => this.Close();
+            ReturnRec.Show();
 
         }
 
@@ -193,6 +193,14 @@ namespace AdvancedProjectApp
         {
             comboStatusFilter.SelectedIndex = -1; // Clear selection
             RefreshData(); // Reload all data
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EquipmentInformation EquipmentInfo = new EquipmentInformation(); // optionally pass user
+            this.Hide();
+            EquipmentInfo.FormClosed += (s, args) => this.Close();
+            EquipmentInfo.Show();
         }
     }
 }

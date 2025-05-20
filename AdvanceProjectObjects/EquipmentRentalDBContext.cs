@@ -34,7 +34,7 @@ namespace AdvanceProjectObjects
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EquipmentRentalDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=(localdb)\\ProjectModels;Database=EquipmentRentalDB;Trusted_Connection=True;");
             }
         }
 
@@ -103,7 +103,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<MaintenanceRecord>(entity =>
             {
                 entity.HasKey(e => e.MaintenanceId)
-                    .HasName("PK__Maintena__E60542B51E68BCAF");
+                    .HasName("PK__Maintena__E60542B5E38FFE33");
 
                 entity.HasOne(d => d.Equipment)
                     .WithMany(p => p.MaintenanceRecords)
@@ -135,7 +135,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<RentalRequest>(entity =>
             {
                 entity.HasKey(e => e.RequestId)
-                    .HasName("PK__RentalRe__33A8519A97AE1794");
+                    .HasName("PK__RentalRe__33A8519AA59F17D3");
 
                 entity.Property(e => e.DateRequested).HasDefaultValueSql("(getdate())");
 
@@ -153,7 +153,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<RentalTransaction>(entity =>
             {
                 entity.HasKey(e => e.TransactionId)
-                    .HasName("PK__RentalTr__55433A4BB3680736");
+                    .HasName("PK__RentalTr__55433A4BB04930D7");
 
                 entity.Property(e => e.DateProcessed).HasDefaultValueSql("(getdate())");
 
@@ -178,7 +178,7 @@ namespace AdvanceProjectObjects
             modelBuilder.Entity<ReturnRecord>(entity =>
             {
                 entity.HasKey(e => e.ReturnId)
-                    .HasName("PK__ReturnRe__F445E988575D24AF");
+                    .HasName("PK__ReturnRe__F445E988341E98BE");
 
                 entity.HasOne(d => d.Transaction)
                     .WithMany(p => p.ReturnRecords)

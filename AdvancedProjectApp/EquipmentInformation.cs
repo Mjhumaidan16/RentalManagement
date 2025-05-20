@@ -23,6 +23,8 @@ namespace AdvancedProjectApp
         {
             InitializeComponent();
 
+            equipmentDBContext = new EquipmentRentalDBContext();
+
             var requests = equipmentDBContext.Equipment.Select(r => new
             {
                 r.EquipmentId,
@@ -39,14 +41,14 @@ namespace AdvancedProjectApp
             dataGridView.DataSource = requests;
         }
 
+        private readonly string[] conditionStatuses = { "New", "Good", "Damaged" };
+        private readonly string[] availabilityStatuses = { "Available", "Unavailable", "Under Maintenance" };
+
         private void EquipmentInformation_Load(object sender, EventArgs e)
         {
 
-            cmbConditionStatus.Items.AddRange(new string[] { "All", "New", "Good", "Damaged" });
-            cmbAvailabilityStatus.Items.AddRange(new string[] { "All", "Available", "Rented" });
-
-            cmbConditionStatus.SelectedIndex = 0;  // All
-            cmbAvailabilityStatus.SelectedIndex = 0;  // All
+            cmbConditionStatus.Items.AddRange(conditionStatuses);
+            cmbConditionStatus.SelectedIndex = -1;
 
             RefreshData();
         }
@@ -79,7 +81,7 @@ namespace AdvancedProjectApp
                 {
                     // Validate required fields
                     if (
-                        string.IsNullOrWhiteSpace(txtEquipmentId.Text) ||
+
                         string.IsNullOrWhiteSpace(txtEquipmentName.Text) ||
                         string.IsNullOrWhiteSpace(txtDescription.Text) ||
                         string.IsNullOrWhiteSpace(txtCategoryId.Text) ||
@@ -94,11 +96,7 @@ namespace AdvancedProjectApp
                     }
 
                     // Parse values
-                    if (!int.TryParse(txtEquipmentId.Text, out int equipmentId))
-                    {
-                        MessageBox.Show("Invalid Equipment ID. Please enter a number.");
-                        return;
-                    }
+
 
                     if (!int.TryParse(txtCategoryId.Text, out int categoryId))
                     {
@@ -132,7 +130,7 @@ namespace AdvancedProjectApp
                     // Create and add new equipment
                     var newEquipment = new Equipment
                     {
-                        EquipmentId = equipmentId,
+
                         Name = name,
                         Description = description,
                         CategoryId = categoryId,
@@ -199,17 +197,22 @@ namespace AdvancedProjectApp
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
+
+            string selectedConditionStatus = cmbConditionStatus.SelectedItem?.ToString();
+            //string selectedAvailabilityStatus = cmbAvailabilityStatus.SelectedItem?.ToString();
+
             var query = equipmentDBContext.Equipment.AsQueryable();
 
-            if (condition != "All")
+            // Apply filters only if selected
+            if (!string.IsNullOrEmpty(selectedConditionStatus))
             {
-                query = query.Where(e => e.ConditionStatus == condition);
+                query = query.Where(r => r.ConditionStatus == selectedConditionStatus);
             }
 
-            if (availability != "All")
-            {
-                query = query.Where(e => e.AvailabilityStatus == availability);
-            }
+            //if (!string.IsNullOrEmpty(selectedAvailabilityStatus))
+            //{
+            //    query = query.Where(r => r.AvailabilityStatus == selectedAvailabilityStatus);
+            //}
 
             var filteredData = query.Select(r => new
             {
@@ -224,12 +227,21 @@ namespace AdvancedProjectApp
                 r.LastUpdated
             }).ToList();
 
+            if (filteredData.Count == 0)
+            {
+                MessageBox.Show("No equipment matches the selected filters.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
             dataGridView.DataSource = filteredData;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            //cmbAvailabilityStatus.SelectedIndex = -1; // Clear selection
+            //RefreshData(); // Reload all data
 
+            cmbConditionStatus.SelectedIndex = -1; // Clear selection
+            RefreshData(); // Reload all data
         }
 
 
@@ -244,6 +256,10 @@ namespace AdvancedProjectApp
                 else if (ctl is ComboBox comboBox)
                 {
                     comboBox.SelectedIndex = -1; // Clears selection in dropdown
+                }
+                else if (ctl is RichTextBox RichTextBox)
+                {
+                    RichTextBox.Clear(); // Clears selection in dropdown
                 }
                 else if (ctl.HasChildren)
                 {
@@ -271,6 +287,39 @@ namespace AdvancedProjectApp
                .ToList();
             dataGridView.DataSource = requests;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Open the Dashboard form
+            DashboardForm dashboardForm = new DashboardForm(); // optionally pass user
+            this.Hide();
+            dashboardForm.FormClosed += (s, args) => this.Close();
+            dashboardForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Rental_Requests RentalReq = new Rental_Requests(); // optionally pass user
+            this.Hide();
+            RentalReq.FormClosed += (s, args) => this.Close();
+            RentalReq.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ReturnRecordForm ReturnRec = new ReturnRecordForm(); // optionally pass user
+            this.Hide();
+            ReturnRec.FormClosed += (s, args) => this.Close();
+            ReturnRec.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Rental_Transactions RentalTr = new Rental_Transactions(); // optionally pass user
+            this.Hide();
+            RentalTr.FormClosed += (s, args) => this.Close();
+            RentalTr.Show();
         }
     }
 }

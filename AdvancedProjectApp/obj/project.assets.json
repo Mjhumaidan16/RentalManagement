@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net9.0-windows7.0": {
+    "net6.0-windows7.0": {
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -1953,45 +1953,39 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net9.0-windows7.0": [
+    "net6.0-windows7.0": [
       "AdvanceProjectObjects >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mjhum\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\202202728\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\AdvancedProjectApp.csproj",
+      "projectUniqueName": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvancedProjectApp\\AdvancedProjectApp.csproj",
       "projectName": "AdvancedProjectApp",
-      "projectPath": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\AdvancedProjectApp.csproj",
-      "packagesPath": "C:\\Users\\mjhum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvancedProjectApp\\obj\\",
+      "projectPath": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvancedProjectApp\\AdvancedProjectApp.csproj",
+      "packagesPath": "C:\\Users\\202202728\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvancedProjectApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mjhum\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\202202728\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0-windows"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0-windows7.0": {
-          "targetAlias": "net9.0-windows",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj": {
-              "projectPath": "C:\\Users\\mjhum\\Downloads\\RentalManagement_FormAPP\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj"
+            "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj": {
+              "projectPath": "C:\\Users\\202202728\\Documents\\GitHub\\RentalManagement\\AdvanceProjectObjects\\AdvanceProjectObjects.csproj"
             }
           }
         }
@@ -2000,17 +1994,11 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
-      "net9.0-windows7.0": {
-        "targetAlias": "net9.0-windows",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -2030,7 +2018,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
