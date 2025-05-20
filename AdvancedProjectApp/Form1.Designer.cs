@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Login_Btn = new Button();
-            ForgotPassword = new LinkLabel();
-            CreateNewAcount = new LinkLabel();
             panel1 = new Panel();
             panel2 = new Panel();
             Login = new Label();
@@ -75,32 +73,6 @@
             Login_Btn.Text = "Login";
             Login_Btn.UseVisualStyleBackColor = true;
             Login_Btn.Click += Button1_Click;
-            // 
-            // ForgotPassword
-            // 
-            ForgotPassword.AutoSize = true;
-            ForgotPassword.LinkColor = Color.Black;
-            ForgotPassword.Location = new Point(703, 412);
-            ForgotPassword.Margin = new Padding(4, 0, 4, 0);
-            ForgotPassword.Name = "ForgotPassword";
-            ForgotPassword.Size = new Size(114, 17);
-            ForgotPassword.TabIndex = 3;
-            ForgotPassword.TabStop = true;
-            ForgotPassword.Text = "Forgot Password";
-            ForgotPassword.LinkClicked += ForgotPassword_LinkClicked;
-            // 
-            // CreateNewAcount
-            // 
-            CreateNewAcount.AutoSize = true;
-            CreateNewAcount.LinkColor = Color.Black;
-            CreateNewAcount.Location = new Point(696, 516);
-            CreateNewAcount.Margin = new Padding(4, 0, 4, 0);
-            CreateNewAcount.Name = "CreateNewAcount";
-            CreateNewAcount.Size = new Size(129, 17);
-            CreateNewAcount.TabIndex = 4;
-            CreateNewAcount.TabStop = true;
-            CreateNewAcount.Text = "Create New Acount";
-            CreateNewAcount.LinkClicked += CreateNewAcount_LinkClicked;
             // 
             // panel1
             // 
@@ -292,6 +264,7 @@
             Password.Location = new Point(35, 17);
             Password.Margin = new Padding(4);
             Password.Name = "Password";
+            Password.PasswordChar = '*';
             Password.Size = new Size(415, 19);
             Password.TabIndex = 11;
             Password.Text = "Enter Password";
@@ -359,8 +332,6 @@
             Controls.Add(panel2);
             Controls.Add(Email_Label);
             Controls.Add(panel1);
-            Controls.Add(CreateNewAcount);
-            Controls.Add(ForgotPassword);
             Controls.Add(Login_Btn);
             Font = new Font("Microsoft Sans Serif", 10.25F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -391,8 +362,6 @@
         #endregion
 
         private Button Login_Btn;
-        private LinkLabel ForgotPassword;
-        private LinkLabel CreateNewAcount;
         private Panel panel1;
         private Panel panel2;
         private Label Login;

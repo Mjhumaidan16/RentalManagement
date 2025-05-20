@@ -324,7 +324,7 @@ namespace AdvancedProjectApp
         {
             txtFilterValue.Clear();
             RefreshData();
-            
+
         }
     }
 }

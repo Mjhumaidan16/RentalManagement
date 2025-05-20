@@ -23,6 +23,25 @@ namespace AdvancedProjectApp
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            int totalEquipment = equipmentDBContext.Equipment.Count();
+            labelTotalEquipment.Text = $"{totalEquipment}";
+
+            int pendingRequests = equipmentDBContext.RentalRequests
+            .Count(r => r.Status == "Pending");
+            labelPendingRequests.Text = $"{pendingRequests}";
+
+            int totalTransactions = equipmentDBContext.RentalTransactions.Count();
+            labelTotalTransactions.Text = $"{totalTransactions}";
+
+            int totalRequests = equipmentDBContext.RentalRequests.Count();
+            labelTotalRequests.Text = $" {totalRequests}";
+
+            decimal totalRevenue = equipmentDBContext.RentalTransactions
+            .Sum(t => t.RentalFee + t.Deposit);
+            labelRevenue.Text = $"{totalRevenue:C}";
+
+
+
 
         }
 

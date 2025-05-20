@@ -143,3 +143,4 @@ C:\Users\202000488\Documents\GitHub\RentalManagement\AdvancedProjectApp\obj\Debu
 C:\Users\202000488\Documents\GitHub\RentalManagement\AdvancedProjectApp\obj\Debug\net6.0-windows\AdvancedProjectApp.genruntimeconfig.cache
 C:\Users\202000488\Documents\GitHub\RentalManagement\AdvancedProjectApp\obj\Debug\net6.0-windows\ref\AdvancedProjectApp.dll
 C:\Users\202000488\Documents\GitHub\RentalManagement\AdvancedProjectApp\obj\Debug\net6.0-windows\AdvancedProjectApp.Log.resources
+C:\Users\202202728\Documents\GitHub\RentalManagement\AdvancedProjectApp\obj\Debug\net6.0-windows\AdvancedProjectApp.Log.resources

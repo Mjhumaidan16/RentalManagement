@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdvanceProjectObjects
 {
-    [Index("Email", Name = "UQ__Users__A9D10534FCFF2303", IsUnique = true)]
+    [Index("Email", Name = "UQ__Users__A9D1053499A5D238", IsUnique = true)]
     public partial class User
     {
         public User()

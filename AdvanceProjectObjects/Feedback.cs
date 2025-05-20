@@ -23,8 +23,6 @@ namespace AdvanceProjectObjects
         public DateTime? CreatedAt { get; set; }
         [Column("TransactionID")]
         public int? TransactionId { get; set; }
-        [Required]
-        public bool? Visible { get; set; }
 
         [ForeignKey("CustomerId")]
         [InverseProperty("Feedbacks")]

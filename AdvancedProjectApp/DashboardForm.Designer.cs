@@ -33,8 +33,6 @@
             panel6 = new Panel();
             pictureBox6 = new PictureBox();
             panel7 = new Panel();
-            pictureBox12 = new PictureBox();
-            button6 = new Button();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -49,27 +47,26 @@
             groupBox7 = new GroupBox();
             pictureBox7 = new PictureBox();
             label1 = new Label();
-            lblTodaySales = new Label();
+            labelTotalTransactions = new Label();
             groupBox6 = new GroupBox();
             pictureBox8 = new PictureBox();
             label6 = new Label();
-            lblTopSellingProduct = new Label();
+            labelTotalRequests = new Label();
             groupBox5 = new GroupBox();
             pictureBox9 = new PictureBox();
             label3 = new Label();
-            lblTodayOrders = new Label();
+            labelTotalEquipment = new Label();
             groupBox4 = new GroupBox();
             pictureBox10 = new PictureBox();
             label4 = new Label();
-            lblTotalSales = new Label();
+            labelRevenue = new Label();
             groupBox3 = new GroupBox();
             pictureBox11 = new PictureBox();
             label2 = new Label();
-            lblCustomers = new Label();
+            labelPendingRequests = new Label();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -120,8 +117,6 @@
             // panel7
             // 
             panel7.BackColor = Color.SteelBlue;
-            panel7.Controls.Add(pictureBox12);
-            panel7.Controls.Add(button6);
             panel7.Controls.Add(pictureBox6);
             panel7.Controls.Add(pictureBox5);
             panel7.Controls.Add(pictureBox4);
@@ -139,30 +134,6 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(284, 722);
             panel7.TabIndex = 27;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(32, 470);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(40, 43);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 36;
-            pictureBox12.TabStop = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.SteelBlue;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(95, 470);
-            button6.Name = "button6";
-            button6.Size = new Size(169, 52);
-            button6.TabIndex = 35;
-            button6.Text = "SginOut";
-            button6.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
@@ -297,7 +268,7 @@
             groupBox1.Controls.Add(groupBox5);
             groupBox1.Controls.Add(groupBox4);
             groupBox1.Controls.Add(groupBox3);
-            groupBox1.Location = new Point(324, 73);
+            groupBox1.Location = new Point(358, 83);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(823, 470);
             groupBox1.TabIndex = 29;
@@ -309,10 +280,10 @@
             groupBox7.BackColor = Color.White;
             groupBox7.Controls.Add(pictureBox7);
             groupBox7.Controls.Add(label1);
-            groupBox7.Controls.Add(lblTodaySales);
+            groupBox7.Controls.Add(labelTotalTransactions);
             groupBox7.Location = new Point(524, 22);
             groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(152, 181);
+            groupBox7.Size = new Size(190, 181);
             groupBox7.TabIndex = 16;
             groupBox7.TabStop = false;
             // 
@@ -320,7 +291,7 @@
             // 
             pictureBox7.BackColor = Color.White;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(31, 22);
+            pictureBox7.Location = new Point(46, 22);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(100, 80);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -329,30 +300,30 @@
             // 
             // label1
             // 
-            label1.Location = new Point(6, 118);
+            label1.Location = new Point(21, 113);
             label1.Name = "label1";
             label1.Size = new Size(140, 20);
             label1.TabIndex = 2;
-            label1.Text = "Today's sales";
+            label1.Text = "Total Transactions:";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblTodaySales
+            // labelTotalTransactions
             // 
-            lblTodaySales.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTodaySales.Location = new Point(6, 133);
-            lblTodaySales.Name = "lblTodaySales";
-            lblTodaySales.Size = new Size(140, 37);
-            lblTodaySales.TabIndex = 7;
-            lblTodaySales.Text = "lblTodaySales";
-            lblTodaySales.TextAlign = ContentAlignment.TopCenter;
+            labelTotalTransactions.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTotalTransactions.Location = new Point(21, 133);
+            labelTotalTransactions.Name = "labelTotalTransactions";
+            labelTotalTransactions.Size = new Size(140, 37);
+            labelTotalTransactions.TabIndex = 7;
+            labelTotalTransactions.Text = "labelTotalTransactions";
+            labelTotalTransactions.TextAlign = ContentAlignment.TopCenter;
             // 
             // groupBox6
             // 
             groupBox6.BackColor = Color.White;
             groupBox6.Controls.Add(pictureBox8);
             groupBox6.Controls.Add(label6);
-            groupBox6.Controls.Add(lblTopSellingProduct);
-            groupBox6.Location = new Point(354, 231);
+            groupBox6.Controls.Add(labelTotalRequests);
+            groupBox6.Location = new Point(435, 231);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(235, 181);
             groupBox6.TabIndex = 16;
@@ -375,28 +346,28 @@
             label6.Name = "label6";
             label6.Size = new Size(223, 24);
             label6.TabIndex = 5;
-            label6.Text = "Top selling product";
+            label6.Text = "Total Requests:";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblTopSellingProduct
+            // labelTotalRequests
             // 
-            lblTopSellingProduct.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTopSellingProduct.Location = new Point(6, 127);
-            lblTopSellingProduct.Name = "lblTopSellingProduct";
-            lblTopSellingProduct.Size = new Size(223, 51);
-            lblTopSellingProduct.TabIndex = 9;
-            lblTopSellingProduct.Text = "lblTopSellingProduct";
-            lblTopSellingProduct.TextAlign = ContentAlignment.TopCenter;
+            labelTotalRequests.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTotalRequests.Location = new Point(6, 127);
+            labelTotalRequests.Name = "labelTotalRequests";
+            labelTotalRequests.Size = new Size(223, 51);
+            labelTotalRequests.TabIndex = 9;
+            labelTotalRequests.Text = "labelTotalRequests";
+            labelTotalRequests.TextAlign = ContentAlignment.TopCenter;
             // 
             // groupBox5
             // 
             groupBox5.BackColor = Color.White;
             groupBox5.Controls.Add(pictureBox9);
             groupBox5.Controls.Add(label3);
-            groupBox5.Controls.Add(lblTodayOrders);
+            groupBox5.Controls.Add(labelTotalEquipment);
             groupBox5.Location = new Point(269, 13);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(152, 181);
+            groupBox5.Size = new Size(196, 181);
             groupBox5.TabIndex = 15;
             groupBox5.TabStop = false;
             // 
@@ -406,37 +377,37 @@
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(31, 22);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(100, 80);
+            pictureBox9.Size = new Size(135, 80);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 10;
             pictureBox9.TabStop = false;
             // 
             // label3
             // 
-            label3.Location = new Point(6, 118);
+            label3.Location = new Point(26, 117);
             label3.Name = "label3";
             label3.Size = new Size(140, 20);
             label3.TabIndex = 2;
-            label3.Text = "Today's orders";
+            label3.Text = "Total Equipment:";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblTodayOrders
+            // labelTotalEquipment
             // 
-            lblTodayOrders.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTodayOrders.Location = new Point(6, 133);
-            lblTodayOrders.Name = "lblTodayOrders";
-            lblTodayOrders.Size = new Size(140, 37);
-            lblTodayOrders.TabIndex = 7;
-            lblTodayOrders.Text = "lblTodayOrders";
-            lblTodayOrders.TextAlign = ContentAlignment.TopCenter;
+            labelTotalEquipment.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTotalEquipment.Location = new Point(26, 137);
+            labelTotalEquipment.Name = "labelTotalEquipment";
+            labelTotalEquipment.Size = new Size(140, 37);
+            labelTotalEquipment.TabIndex = 7;
+            labelTotalEquipment.Text = "labelTotalEquipment";
+            labelTotalEquipment.TextAlign = ContentAlignment.TopCenter;
             // 
             // groupBox4
             // 
             groupBox4.BackColor = Color.White;
             groupBox4.Controls.Add(pictureBox10);
             groupBox4.Controls.Add(label4);
-            groupBox4.Controls.Add(lblTotalSales);
-            groupBox4.Location = new Point(16, 231);
+            groupBox4.Controls.Add(labelRevenue);
+            groupBox4.Location = new Point(49, 231);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(235, 181);
             groupBox4.TabIndex = 15;
@@ -459,28 +430,28 @@
             label4.Name = "label4";
             label4.Size = new Size(223, 24);
             label4.TabIndex = 3;
-            label4.Text = "Total sales";
+            label4.Text = "Total Revenue:";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblTotalSales
+            // labelRevenue
             // 
-            lblTotalSales.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTotalSales.Location = new Point(6, 129);
-            lblTotalSales.Name = "lblTotalSales";
-            lblTotalSales.Size = new Size(223, 49);
-            lblTotalSales.TabIndex = 8;
-            lblTotalSales.Text = "lblTotalSales";
-            lblTotalSales.TextAlign = ContentAlignment.TopCenter;
+            labelRevenue.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelRevenue.Location = new Point(6, 129);
+            labelRevenue.Name = "labelRevenue";
+            labelRevenue.Size = new Size(223, 49);
+            labelRevenue.TabIndex = 8;
+            labelRevenue.Text = "labelRevenue";
+            labelRevenue.TextAlign = ContentAlignment.TopCenter;
             // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.White;
             groupBox3.Controls.Add(pictureBox11);
             groupBox3.Controls.Add(label2);
-            groupBox3.Controls.Add(lblCustomers);
+            groupBox3.Controls.Add(labelPendingRequests);
             groupBox3.Location = new Point(16, 13);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(152, 181);
+            groupBox3.Size = new Size(197, 181);
             groupBox3.TabIndex = 14;
             groupBox3.TabStop = false;
             // 
@@ -488,31 +459,31 @@
             // 
             pictureBox11.BackColor = Color.White;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(25, 21);
+            pictureBox11.Location = new Point(33, 22);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(100, 80);
+            pictureBox11.Size = new Size(132, 80);
             pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 11;
             pictureBox11.TabStop = false;
             // 
             // label2
             // 
-            label2.Location = new Point(6, 114);
+            label2.Location = new Point(33, 110);
             label2.Name = "label2";
             label2.Size = new Size(140, 19);
             label2.TabIndex = 1;
-            label2.Text = "Total customers";
+            label2.Text = "Pending Requests:";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblCustomers
+            // labelPendingRequests
             // 
-            lblCustomers.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCustomers.Location = new Point(6, 129);
-            lblCustomers.Name = "lblCustomers";
-            lblCustomers.Size = new Size(140, 49);
-            lblCustomers.TabIndex = 6;
-            lblCustomers.Text = "lblCustomers";
-            lblCustomers.TextAlign = ContentAlignment.TopCenter;
+            labelPendingRequests.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelPendingRequests.Location = new Point(33, 129);
+            labelPendingRequests.Name = "labelPendingRequests";
+            labelPendingRequests.Size = new Size(140, 49);
+            labelPendingRequests.TabIndex = 6;
+            labelPendingRequests.Text = "labelPendingRequests";
+            labelPendingRequests.TextAlign = ContentAlignment.TopCenter;
             // 
             // DashboardForm
             // 
@@ -528,7 +499,6 @@
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -568,24 +538,22 @@
         private GroupBox groupBox7;
         private PictureBox pictureBox7;
         private Label label1;
-        private Label lblTodaySales;
+        private Label labelTotalTransactions;
         private GroupBox groupBox6;
         private PictureBox pictureBox8;
         private Label label6;
-        private Label lblTopSellingProduct;
+        private Label labelTotalRequests;
         private GroupBox groupBox5;
         private PictureBox pictureBox9;
         private Label label3;
-        private Label lblTodayOrders;
+        private Label labelTotalEquipment;
         private GroupBox groupBox4;
         private PictureBox pictureBox10;
         private Label label4;
-        private Label lblTotalSales;
+        private Label labelRevenue;
         private GroupBox groupBox3;
         private PictureBox pictureBox11;
         private Label label2;
-        private Label lblCustomers;
-        private PictureBox pictureBox12;
-        private Button button6;
+        private Label labelPendingRequests;
     }
 }
